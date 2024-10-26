@@ -1,19 +1,27 @@
-![image](https://github.com/user-attachments/assets/d7850fe4-2e59-494e-bd2f-e765486fb1a4)## X 
-## Summaries:
+# X Summaries:
   
-  # Cyber Kill Chain
+  ## Cyber Kill Chain
     https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
-  # Darknet diaries
-    Episode 9 Spy
-  # Mitre ATT&ck / enterprise matrix 
+  ## Darknet diaries
+    Episodes 99: SPY and 100:NSO
+    (https://darknetdiaries.com/transcript/99/and https://darknetdiaries.com/transcript/100/)
+    - story about spies, citizen lab (an independet oraganisation to help people in digital threats), journalists and Israeli techcompany
+    - Spyware was created back in 2012
+    - journalist and activists got wind about foul play using the spyware
+    - some shady means were tried to surpres the investigation of foul play
+    - activist and journalist outwitted the spy and exposed him
+    - no-one got caught but some suspicions were against the developer of spyware
+    - using spyware against citizens when trying to prevent terrorist acts - nodays even more important question: where we draw the line? Is there any ethics if sell your weapons to dictators.
+    - who is responsible if you sell spyware as a business
+  ## Mitre ATT&ck / enterprise matrix 
     (source: https://attack.mitre.org/matrices/enterprise/ and https://attack.mitre.org/resources/faq/)
-  - "tactic"
+  - ### "tactic"
     - main category for enterprise matrix
     - consist of multiple techniques
     - the why - what are trying to achieve with its techniques
     - example - Reconnaissance - to gather information about the object(s)
       --> old times this could be done with binoculars and microphones (and why not these days also). E.g. you acquire blueprints of the premises, find out the software used for Jira, Confluence, Miro etc....
-  - "technique"
+  - ### "technique"
     - in Att&ck context is a "How to execute attack" - detailed description of attack
     - Vertical in matrix under one tactic
     - Can contain sub-techniques
@@ -21,7 +29,7 @@
     - Example -Gather Victim Org Information --> e.g. Business relationships
         --> you can pretend to be salesman in conference and pry victims hardware vendors
       
-  - "procedure"
+  - ### "procedure"
     - implementation of technique that is used
     - can containg several techniques
     - chain of events/actions and tools to implement evil
@@ -35,6 +43,13 @@ Cyber kill chanin vs. ATT&CK enterprise matrix
 # B
 Security incident
  Pick a security incident and learn about it. Write briefly about it. Point out the concepts of threat actor, exploit, vulnerability and (business) impact. (You can find writeups about security incidents from Darknet Diaries and Krebs)
+ (source https://darknetdiaries.com/transcript/99/and https://darknetdiaries.com/transcript/100/)
+ Pegasus - not an actual incident, but multiple incidents. And maybe still going strong from year 2012. Pegasus is weaponized malware, a product to make business, build to be sold and exploited by state-level operators, maybe anyone who has enough money and power. The customer data of the company is unknown so you can't be sure. Pegasus was spyware to exploit multiple zero-day vulnerabilities and it first emerged on Ios. It being spyware, its main target is individuals and their mobile device. It could be used for reconnaisance purposes, to know where the person was, who the target was communicating. Basically anything that one did with its phone, state secrets, business secrets, criminal activity etc. Only a actors imagination is the limit. 
+The exploit had three stages - 
+   1 .click the link e.g in text message from your partner. Clicking activates javascript via browser. Javascript exploits a bug in browser's engine. That allows the script upload spyware to phone  
+   2. Because the target devices were iPhones they needed to use two another exploits to make it possible to be run in the phone
+   3.Actual app is then run on the phone and it uses normal phone features. It can turn on the camera,microphone, read messages or listen calls etc.
+   Basically it exploited three unknown vulnerabilities in phone and one for user - the message could be very agressively designed or what would you say when you get message that yous daughter is in the hospital and the link is to provide more information about it.
 
 # C
 Instal debia on virtualbox (Using guide in https://terokarvinen.com/2021/install-debian-on-virtualbox/)
