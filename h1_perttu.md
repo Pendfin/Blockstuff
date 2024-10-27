@@ -1,10 +1,22 @@
-# X Summaries:
+# h1 Adversarial mindset by Perttu
+
+# X
+
+##  Summaries:
   
   ## Cyber Kill Chain
-    https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+    Source https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+    - Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains - describes necessity to be proactive while defending your assets in digital reality
+    - In history aproach has been reactive and adversaries are thought to be always atleast one step ahead of defenders
+    - Kill chain is methodological approach to detect, mitigate and prevent cyberthreats
+    - it presents indicators (atomic, computed and behaviroal) which are revealed and used to recognize what are the proceudres and methods of adversaries
+    - The Kill chain is defined as following phases: reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives
+    - Paper defines a matrix with phases and action (detect, deny, disrupt, degrade, deceive, destroy) taken in every phase
+    - Paper points out that all phases must be analysed
+    - Here aplies also 'shift left' thinking. This means moving focus in the process or in this case in chain to things that are happening first (but of course not forgetting things happening on the right). If you are able to build up capabilities to e.g. detect threats in delivery phase it better and cheaper than in later phases
   ## Darknet diaries
     Episodes 99: SPY and 100:NSO
-    (https://darknetdiaries.com/transcript/99/and https://darknetdiaries.com/transcript/100/)
+    Sources https://darknetdiaries.com/transcript/99/ and https://darknetdiaries.com/transcript/100/
     - story about spies, citizen lab (an independet oraganisation to help people in digital threats), journalists and Israeli techcompany
     - Spyware was created back in 2012
     - journalist and activists got wind about foul play using the spyware
@@ -14,7 +26,7 @@
     - using spyware against citizens when trying to prevent terrorist acts - nodays even more important question: where we draw the line? Is there any ethics if sell your weapons to dictators.
     - who is responsible if you sell spyware as a business
   ## Mitre ATT&ck / enterprise matrix 
-    (source: https://attack.mitre.org/matrices/enterprise/ and https://attack.mitre.org/resources/faq/)
+    source: https://attack.mitre.org/matrices/enterprise/ and https://attack.mitre.org/resources/faq/
   - ### "tactic"
     - main category for enterprise matrix
     - consist of multiple techniques
@@ -27,24 +39,31 @@
     - Can contain sub-techniques
     - the how - how to achieve the goal
     - Example -Gather Victim Org Information --> e.g. Business relationships
-        --> you can pretend to be salesman in conference and pry victims hardware vendors
-      
+        --> you can pretend to be salesman in conference and pry victims hardware vendors    
   - ### "procedure"
     - implementation of technique that is used
     - can containg several techniques
     - chain of events/actions and tools to implement evil
       - LAPSUS$ Recruiting employees to give access to their employers network and thrpugh that gather information about the software and technical environment 
-  
-
     
-# A
+# A**
 Cyber kill chanin vs. ATT&CK enterprise matrix
+
+sources: https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf and https://attack.mitre.org/matrices/enterprise/ and https://attack.mitre.org/resources/faq/
+
+- Kill chain is more like a methodology and process to control attacks, it gives you concepts to create capabilities how to analyze and act when incident is or has happened and between incidents
+- ATT&CK is knowledge base of tactics and techniques described as matrixes -
+- Tactics in ATT&CK and Kill Chain phases are somewhat similar and has (in my understandind) same purpose - to describe what adversary is trying to achieve
+- But in when in Kill Chain the phases are sequential and one incident has all the phases ATT&CK describes more detailed tactics for each phase
+- ATT&CK also includes techniques which include examples of procedures but also means to mitegate and detect the technique
+- Kill chain is more how to do and ATT&CK what to do
 
 # B
 Security incident
- Pick a security incident and learn about it. Write briefly about it. Point out the concepts of threat actor, exploit, vulnerability and (business) impact. (You can find writeups about security incidents from Darknet Diaries and Krebs)
- (source https://darknetdiaries.com/transcript/99/and https://darknetdiaries.com/transcript/100/)
- Pegasus - not an actual incident, but multiple incidents. And maybe still going strong from year 2012. Pegasus is weaponized malware, a product to make business, build to be sold and exploited by state-level operators, maybe anyone who has enough money and power. The customer data of the company is unknown so you can't be sure. Pegasus was spyware to exploit multiple zero-day vulnerabilities and it first emerged on Ios. It being spyware, its main target is individuals and their mobile device. It could be used for reconnaisance purposes, to know where the person was, who the target was communicating. Basically anything that one did with its phone, state secrets, business secrets, criminal activity etc. Only a actors imagination is the limit. 
+
+source https://darknetdiaries.com/transcript/99/ and https://darknetdiaries.com/transcript/100/
+
+Pegasus - not an actual incident, but multiple incidents. And maybe still going strong from year 2012. Pegasus is weaponized malware, a product to make business, build to be sold and exploited by state-level operators, maybe anyone who has enough money and power. The customer data of the company is unknown so you can't be sure. Pegasus was spyware to exploit multiple zero-day vulnerabilities and it first emerged on Ios. It being spyware, its main target is individuals and their mobile device. It could be used for reconnaisance purposes, to know where the person was, who the target was communicating. Basically anything that one did with its phone, state secrets, business secrets, criminal activity etc. Only a actors imagination is the limit. 
 The exploit had three stages - 
    1 .click the link e.g in text message from your partner. Clicking activates javascript via browser. Javascript exploits a bug in browser's engine. That allows the script upload spyware to phone  
    2. Because the target devices were iPhones they needed to use two another exploits to make it possible to be run in the phone
@@ -110,14 +129,6 @@ So build 19045.5011
 Fixing the screen with the guide - BIG MISTAKE - went bad to worse uninstalled the existing version and lost it. No new one was availble
 But then I found the way to rescale it and fix the shared clipboard through the menu (View and Devices). Always check the version you're playing with.
 Snapshot taken.
-
-
-
-
-
-
-
-
 
 ## D
 
