@@ -5,7 +5,7 @@
 ##  Summaries:
   
   ## Cyber Kill Chain
-    Source https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+    
     
     - Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains - describes necessity to be proactive while defending your assets in digital reality
     - In history aproach has been reactive and adversaries are thought to be always atleast one step ahead of defenders
@@ -48,7 +48,7 @@
     - chain of events/actions and tools to implement evil
       - LAPSUS$ Recruiting employees to give access to their employers network and thrpugh that gather information about the software and technical environment 
     
-# A**
+# A
 Cyber kill chanin vs. ATT&CK enterprise matrix
 
 sources: https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf and https://attack.mitre.org/matrices/enterprise/ and https://attack.mitre.org/resources/faq/
