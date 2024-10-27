@@ -6,7 +6,8 @@
   
   ## Cyber Kill Chain
     
-    
+    Source https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+
     - Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains - describes necessity to be proactive while defending your assets in digital reality
     - In history aproach has been reactive and adversaries are thought to be always atleast one step ahead of defenders
     - Kill chain is methodological approach to detect, mitigate and prevent cyberthreats
@@ -15,6 +16,7 @@
     - Paper defines a matrix with phases and action (detect, deny, disrupt, degrade, deceive, destroy) taken in every phase
     - Paper points out that all phases must be analysed
     - Here aplies also 'shift left' thinking. This means moving focus in the process or in this case in chain to things that are happening first (but of course not forgetting things happening on the right). If you are able to build up capabilities to e.g. detect threats in delivery phase it better and cheaper than in later phases
+  
   ## Darknet diaries
     Episodes 99: SPY and 100:NSO
     Sources https://darknetdiaries.com/transcript/99/ and https://darknetdiaries.com/transcript/100/
@@ -27,6 +29,7 @@
     - no-one got caught but some suspicions were against the developer of spyware
     - using spyware against citizens when trying to prevent terrorist acts - nodays even more important question: where we draw the line? Is there any ethics if sell your weapons to dictators.
     - who is responsible if you sell spyware as a business
+  
   ## Mitre ATT&ck / enterprise matrix 
     source: https://attack.mitre.org/matrices/enterprise/ and https://attack.mitre.org/resources/faq/
   - ### "tactic"
