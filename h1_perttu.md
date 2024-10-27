@@ -6,6 +6,7 @@
   
   ## Cyber Kill Chain
     Source https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+    
     - Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains - describes necessity to be proactive while defending your assets in digital reality
     - In history aproach has been reactive and adversaries are thought to be always atleast one step ahead of defenders
     - Kill chain is methodological approach to detect, mitigate and prevent cyberthreats
@@ -17,6 +18,7 @@
   ## Darknet diaries
     Episodes 99: SPY and 100:NSO
     Sources https://darknetdiaries.com/transcript/99/ and https://darknetdiaries.com/transcript/100/
+    
     - story about spies, citizen lab (an independet oraganisation to help people in digital threats), journalists and Israeli techcompany
     - Spyware was created back in 2012
     - journalist and activists got wind about foul play using the spyware
@@ -71,23 +73,25 @@ The exploit had three stages -
    Basically it exploited three unknown vulnerabilities in phone and one for user - the message could be very agressively designed or what would you say when you get message that yous daughter is in the hospital and the link is to provide more information about it.
 
 # C
-Instal debia on virtualbox (Using guide in https://terokarvinen.com/2021/install-debian-on-virtualbox/)
-Report your work, including the environment (including host OS, the real physical computer used), the steps you took and their results.
+Instal debia on virtualbox 
+source guide in https://terokarvinen.com/2021/install-debian-on-virtualbox/
+
+OS:
 Version	Windows 10 Pro
 Version	22H2
 So build 19045.5011
 
 # installing
   1 .Installing image from suggested source: https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
-    ![image](https://github.com/user-attachments/assets/d9d927d5-d09b-46fd-8d19-03604eaaa2ee)
+    ![image](https://github.com/user-attachments/assets/d9d927d5-d09b-46fd-8d19-03604eaaa2ee) --> success
   
   2. Downloading virtualbox for Windows hosts from https://www.virtualbox.org/wiki/Downloads
   
   3. Running the Virtualbox installer (v 7.1.4) - accepting permissions - reading license agreement - approving it - 
     ![image](https://github.com/user-attachments/assets/847cc586-9c78-4493-8ec5-959a5f2e737d) - agreeing all the other
-    steps and starting installation
+    steps and starting installation --> success
   
-  4. Starting Virtualbox - choosing expert mode
+  4. Starting Virtualbox - choosing expert mode 
   
   5. Starting to create VM 
     ![image](https://github.com/user-attachments/assets/34a8c1b2-de0a-43eb-83d6-b7b781da1294) 
@@ -97,38 +101,40 @@ So build 19045.5011
   
   6. Voilá
     ![image](https://github.com/user-attachments/assets/6e1bfd75-b745-429c-8af7-f4f335a0cd08)
-  
+  --> success
   7. Putting CD in 
     ![image](https://github.com/user-attachments/assets/cae8d31d-bf95-4e78-ae2c-c265faf2e076)
     ![image](https://github.com/user-attachments/assets/8865ac77-92c1-4018-ab6c-ade3e88c366b)
-  
+  --> success
   8. Powering up
     ![image](https://github.com/user-attachments/assets/9215a249-89cd-4bfe-a160-01da00ade3a4)
-  
+  --> success
   9. Testing (not so quick though)
     Firing up Firefox
     ![image](https://github.com/user-attachments/assets/8b3a0759-5379-49e8-a42d-15e969df96c0)
 
     Mouse and keyboard working
-  
+    --> success
   11. Installing Debian
     ![image](https://github.com/user-attachments/assets/d402cea0-5275-49eb-addb-965735de227b)
-  
+    --> success
   12. Starting up.......
     ![image](https://github.com/user-attachments/assets/cc0ca68b-acba-4e6f-9688-a000342ba728)
-  
+    --> success
   13. Setting up with sudo's
     ![image](https://github.com/user-attachments/assets/f78deb0d-74bc-4af9-8018-9dfcd4c5da47)
-
-      Upgrading....
-      ![image](https://github.com/user-attachments/assets/87b51bbc-4485-43ab-8aba-c11e315ee421)
+          Upgrading....
+    ![image](https://github.com/user-attachments/assets/87b51bbc-4485-43ab-8aba-c11e315ee421)
+      --> success
 
   14. installing firewall
     ![image](https://github.com/user-attachments/assets/e48bf5ae-aa44-453e-bcb5-f8d91ac8c617)
+    --> success
 
 Fixing the screen with the guide - BIG MISTAKE - went bad to worse uninstalled the existing version and lost it. No new one was availble
 But then I found the way to rescale it and fix the shared clipboard through the menu (View and Devices). Always check the version you're playing with.
 Snapshot taken.
+--> success
 
 ## D
 
