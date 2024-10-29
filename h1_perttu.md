@@ -75,7 +75,7 @@ The exploit had three stages -
 2. Because the target devices were iPhones they needed to use two another exploits to make it possible to be run in the phone   
 3. Actual app is then run on the phone and it uses normal phone features. It can turn on the camera,microphone, read messages or listen calls etc.
 
-Basically it exploited three unknown vulnerabilities in phone and one for user - the message could be very agressively designed. What would you say when you get message that yous daughter is in the hospital and the link is to provide more information about it. And of course this would need some reconnaissance (e.g. social media) before to know your soft spots.
+Basically Pegasus exploited three unknown vulnerabilities in phone and one for user. Adrversary send text message for victim. Message was could be very agressively designed. What would you say when you get message that your daughter is in the hospital and the text message telling you this includes link to provide more information about accident. This would of course need some reconnaissance (e.g. social media) beforehand to know your soft spots.
 
 # C
 Instal debia on virtualbox 
