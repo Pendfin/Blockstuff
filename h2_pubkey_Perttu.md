@@ -1,8 +1,18 @@
 These homeworks and links are from https://terokarvinen.com/trust-to-blockchain/#r2-blockchain-to-cryptocurrency
 
 ## x) Read and summarize (with some bullet points)
-Source:Schneier, B. 2015. Applied cryptography, second edition: Protocols, algorithms, and source code in C. 20th anniversary edition ; Second edition. Indianapolis, IN: Wiley.(https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/)
-
+Source:Schneier, B. 2015. chapter 2 Applied cryptography, second edition: Protocols, algorithms, and source code in C. 20th anniversary edition ; Second edition. Indianapolis, IN: Wiley.(https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/)
+Chapters 
+2.5 - 2.8
+Chapter 2.5 descibe
+  - history of public key. Invented in 1976 by Whitfield Diffie and Martin Hellman
+  - simple analogy to mailbox. Anyone can send message, but only few or one can read it
+  - key management is easier, when you don't hacve to deliver and worry safekeeping of all the secret keys. You just have to agree about the cryptosystem used
+  - some ambiguity about the discovery and acceptance of the public kry cryptosystems
+  - public key is slower than symmetric algorithms and that is way it should be used to encrypt keys
+  - public key is vulnerable against chose-plaintext attacks (key is public and if plaintext ha limited possibilities one can try out to break the message)
+  - Merkl's puzzle is a application of public key
+Chapter 2.6 descibe
 Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
 
 Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg
@@ -10,6 +20,12 @@ Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg
 ### a) Pubkey today.
 
 Explain how you have used public key cryptography today or yesterday, outside of this homework. In addition to naming the system, identify how different parties use keys in different steps of the system. (Answering this question likely requries finding sources on your own. This subtask does not require tests with a computer.)
+
+When doing my thesis I have to
+Whatsapp - when senging message
+
+Source https://www.ibm.com/think/topics/public-key-infrastructure
+https://en.wikipedia.org/wiki/End-to-end_encryption
 
 ### b) Messaging.
 
