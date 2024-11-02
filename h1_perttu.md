@@ -1,5 +1,5 @@
 # h1 Adversarial mindset by Perttu
-
+Homework guidance is found https://terokarvinen.com/trust-to-blockchain/#r2-blockchain-to-cryptocurrency
 # X
 
 ##  Summaries:
