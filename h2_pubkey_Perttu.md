@@ -4,7 +4,7 @@ These homeworks and links are from https://terokarvinen.com/trust-to-blockchain/
 Source:Schneier, B. 2015. chapter 2 Applied cryptography, second edition: Protocols, algorithms, and source code in C. 20th anniversary edition ; Second edition. Indianapolis, IN: Wiley.(https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/)
 Chapters 
 2.5 - 2.8
-Chapter 2.5 descibe
+#### Chapter 2.5 communications using symmetric cryptography
   - history of public key. Invented in 1976 by Whitfield Diffie and Martin Hellman
   - simple analogy to mailbox. Anyone can send message, but only few or one can read it
   - key management is easier, when you don't hacve to deliver and worry safekeeping of all the secret keys. You just have to agree about the cryptosystem used
@@ -12,8 +12,29 @@ Chapter 2.5 descibe
   - public key is slower than symmetric algorithms and that is way it should be used to encrypt keys
   - public key is vulnerable against chose-plaintext attacks (key is public and if plaintext ha limited possibilities one can try out to break the message)
   - Merkl's puzzle is a application of public key
-Chapter 2.6 descibe
-Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
+#### Chapter 2.6 digital signatures
+  - signatures have been a proof of authenticity. In digital world you have to have different approach towards the problem than in manual world
+  - arbitrator can be used when using symmetric cryptosystems
+  - abitrator is trusted party in messaging and guarantees the autheniticity of messages and messengees
+  - arbitror is bottleneck in communication and it needs to absolutely secury and trustworthy
+  - works is theory but not in practice
+  - signing documents is basically simple with public-private key pairs
+  - there are also usecases where you can try to cheat (copy) the document and for that reason you can add data e.g. timestamp to signature
+  - problem is when documents become larger and crypting them with public-lkey algorithms are too innefficient
+  - you can circumvent this problem with hash functions. With hash functions you can also have multiple signatures in  one document
+  - nonrepudiation of signature is hard to ensure, but you can use arbitrator to minimize the risk
+#### 2.7. digital signatures with encryption
+  - you should use one algorithm or key when encrypting and other when decrypting
+  - one feature is to resend the message back as a receipt to sender, 
+  - there are multiple ways to attack against public keys, one is to substitute keys in Key distribution scenter
+#### 2.8 random and pseudo-random sequence generation
+  - in computer it is impossible to create real random sequences and many of existing ones are poor
+  - random generators are important in cryptography
+  - but you can build good enough pseudo-random generators
+  - pseudo-random sequence looks random. The sequence should be as long as you need random number
+  - Cryptographic demands for swecure pseudo-random sequence are: it looks random,unpredictability, not reproducerable
+
+ Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
 
 Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg
 
