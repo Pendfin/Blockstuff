@@ -130,7 +130,8 @@ gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
 gpg: next trustdb check due at 2026-11-03
 /home/perttus/alice/pubring.kbx
--------------------------------
+ 
+ -------------------------------
 pub   rsa3072 2024-11-03 [SC] [expires: 2026-11-03]
       C485 C661 4F41 3838 52C2  47C3 E3E9 28DD 2BEE ECE2
 uid           [ultimate] Alice <alice@example.com.invalid>
@@ -142,7 +143,8 @@ gpg: key 2FF2F238673C4805: public key "Perttu Salo DEMO KEY <perttus@example.com
 gpg: Total number processed: 1
 gpg:               imported: 1
 /home/perttus/alice/pubring.kbx
--------------------------------
+
+ -------------------------------
 pub   rsa3072 2024-11-03 [SC] [expires: 2026-11-03]
       C485 C661 4F41 3838 52C2  47C3 E3E9 28DD 2BEE ECE2
 uid           [ultimate] Alice <alice@example.com.invalid>
