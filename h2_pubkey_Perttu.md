@@ -83,7 +83,8 @@ Send an encrypted and signed message using PGP, then verify and decrypt it. (You
 
 #### Let's go
 Using https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ as guide to crawl through this task
-Doing this on with Virtual Machine...... you can find more detailed logs here https://github.com/Pendfin/Blockstuff/blob/main/h2_logs
+Doing this on with Virtual Machine...... you can find more detailed logs here 
+https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
 1. Installing the tools - done, even though newest version claimed to be in VM still installed micri
 2. Generating the key with the name Perttu Salo DEMO KEY  for email perttus@example.com.invalid, no passphase
 3. Generating complete, we have a keypair for Perttu, and exported to perttus.pub file
