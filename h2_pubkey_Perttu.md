@@ -62,33 +62,38 @@ Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learn
    
     
 ### Overview of PGP - Send Encrypted and Signed Message
-Guide to send encrypted messages describes how to create public and private keys, how to simulate creating the trust each other and detailed instructions how to sen crypted messages with gpg
+Guide to send encrypted messages describes how to create public and private keys, how to simulate creating the trust each other and detailed instructions how to sen crypted messages with gpg.
 
 Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg (https://terokarvinen.com/2023/pgp-encrypt-sign-verify/)
   
 
 ### a) Pubkey today.
 
-Explain how you have used public key cryptography today or yesterday, outside of this homework. In addition to naming the system, identify how different parties use keys in different steps of the system. (Answering this question likely requries finding sources on your own. This subtask does not require tests with a computer.)
+I know I used banking services to pay the bills - and basically it works like this
+When logging in https website you actually use transport layer security (TLS)
+TLS provides  
+ - encryption
+ - authentication
+ - integrity
+All starts with handshake, knowing each other and version, cipher suites, identities and generating the session keys which are used to encrypt future messaging. TLS uses public key cryptography to find the right keys for our sessions, but also authentication. Server proves its authenticity with private-key crypted message wich I at my end can verify with public key.
 
-When doing my thesis I have to
-Whatsapp - when senging message
-HTTPS : Pankkiasiointi
-
-Source https://www.ibm.com/think/topics/public-key-infrastructure
-https://en.wikipedia.org/wiki/End-to-end_encryption
+Sources:
+https://en.wikipedia.org/wiki/Public_key_infrastructure
+https://www.identity.com/digital-certificates-key-to-secure-online-transactions/#Understanding_Public_Key_Infrastructure_PKI_and_Its_Role_in_Digital_Certificates
+https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/
+https://www.cloudflare.com/learning/ssl/how-does-public-key-encryption-work/
 
 ### b) Messaging.
 Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
 
 #### Let's go
 Using https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ as guide to crawl through this task
-Doing this on with Virtual Machine...... you can find more detailed logs here 
-https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
-1. Installing the tools - done, even though newest version claimed to be in VM still installed micri
+Doing this on with Virtual Machine (Debian GNU/Linux 12/64-bit, Xfce version 4.18) running in Oracle virtual toolbox.
+If interest exact steps -  you can find more detailed logs here https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
+1. Installing the tools (gpg) - done, even though newest version claimed to be in VM still installed micro
 2. Generating the key with the name Perttu Salo DEMO KEY  for email perttus@example.com.invalid, no passphase
 3. Generating complete, we have a keypair for Perttu, and exported to perttus.pub file
-4. Now creating Alice to communicate with. Alice is a folder in  our home directory
+4. Now creating Alice to communicate with. Alice is a folder in my home directory
 5. Create the configuration files to make it possibly to create separate keys
 6. Created own keypair for Alice to be able to simulate communication
 7. Distribute Perttus public key to Alice (copy from home folder to Alice's), and now I can see both keys in Alice's keyring
@@ -111,19 +116,38 @@ Alice"
 Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
 
 ### d) Eve and Mallory.
+Using sources: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ and https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
 
 In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory malliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific what features, which use of keys and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
-PGP protects in multiple ways messaging:
-For EVE - 
-For Mallory - 
-
+ PGP protects in multiple ways messaging:
+   - creating the keypairs --- gpg --gen -key for yourself, into your own directory, normally with passphrase.
+   - --> this is prerequisite for using keypairs - if you don't have it you can't use gpg
+   - exporting keys --- gpg --export--> you can export your public key to file and publish where ever you like. This makes it possible to receive encrypted messages or verify signatures
+   - signing the to be trusted ---- gpg --sign -key.- You sign a spesific key you have chosen to trust. It is now saved to keyring.
+   - --> this trust makes using of public keys possible and crypting them against eavesdorpping
+   - encrypting the message --- gpg --encrypt --recipient, this determines what public key should be used for encryption
+   - --> this makes it extremely hard to eavesdrop the message while in transit 
+   - signing of the message --- gpg --sign (without any flags it uses senders private key)
+   - --> this verifies the message to be authentic (if my private key hasn't been stolen)
+   - decrypting the message --- gpg --decrypt <filename>
+   - --> it uses your own private key to decrypt the message and uses public key in your keyring to identify the sender. You can be sure that the message came from alice and it was not altered on it's way
+   
 
 ### f) Password management. 
 Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
 Password management
+Using pass in my new best friend VM linux
+1. install the password manager pass for ubuntu/debian
+2. created my own password storage for
 
-Sourcehttps://www.passwordmanager.com/best-linux-password-managers/
+ $ pass init "pendfin Password Storage Key"
+ mkdir: created directory '/home/perttus/.password-store/'
+ Password store initialized for pendfin Password Storage Key
 
-### g) Refer to sources. 
+Source: 
+ https://www.doherty.co.uk/blog/the-benefits-of-a-password-manager/
+ https://www.passwordstore.org/
+ 
+p### g) Refer to sources. 
 
 Verify each homework report (this and the earlier ones) refers to sources. Every homework report should refer to this task page. It should also have references to any other source used, such as web pages, LLMs, man pages, other reports... References are mandatory, and must be present in every report. (This subtask does not need a report, you can just do it and write "Done." as the answer for this subtask.)
