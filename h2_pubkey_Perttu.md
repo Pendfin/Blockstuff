@@ -114,6 +114,7 @@ Alice"
 
 ### c) Other tool. 
 Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
+Proton
 
 ### d) Eve and Mallory.
 Using sources: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ and https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
