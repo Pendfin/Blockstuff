@@ -139,15 +139,52 @@ Password management
 Using pass in my new best friend VM linux
 1. install the password manager pass for ubuntu/debian
 2. created my own password storage for
+ $ pass init "pendfin Password Storage Key" 
+ mkdir: created directory '/home/perttus/.password-store/' 
+ Password store initialized for pendfin Password Storage Key 
+3. Created new key pair for user that owns the password storage
+     Real name: pendfin Password Storage Key
+     Email address: 
+     You selected this USER-ID:
+     "pendfin Password Storage Key"
+     pub   rsa3072 2024-11-03 [SC] [expires: 2026-11-03]
+     01D752B1050E09A37A2DD524545DCCE773E8214B
+     uid                      pendfin Password Storage Key
+     sub   rsa3072 2024-11-03 [E] [expires: 2026-11-03]
+     $ pass insert business/home-alone-2
+     Enter password for business/home-alone-2: 
+     Retype password for business/home-alone-2:
+4. now i have a storage in my passworfd storage for business
+5. I'll create passwords for my hobby
+   $ pass generate hobby/catchmeifyoucan
+   mkdir: created directory '/home/perttus/.password-store/hobby'
+   The generated password for hobby/catchmeifyoucan is:
+   SFHWk`a'kP2;>Jd!($ZU9!i.i
+6. now it looks like this
+   Password Store
+├── business
+│   └── home-alone-2
+└── hobby
+    └── catchmeifyoucan
+ 7. you can easily copy it clipboard which clears itself in 45 seconds, tested and worked
 
- $ pass init "pendfin Password Storage Key"
- mkdir: created directory '/home/perttus/.password-store/'
- Password store initialized for pendfin Password Storage Key
+#### And why you should have this kind of keep?
+ It is not possible (for most of us though) to remember all passwords for all different applications, webshops, stores etc.
+ If you want them to be unique. Many people solve this to have one or two superior passwords. 
+ Attacks using already leaked user+password data. you probably use your credentials somewhere else too
+ Attack using human logic like 123 or sdfgh. Password managers can suggest random passwords which are not human like.
+ If the service provider you're using (eshop or app) you loose just one account, because with password mangers you can keep different ones in everywhere. So it doest provide you some protection against brute force attacks, if you let the password manager create the passwords.
+ In password manager your password is not kept in plaintext. So even your device is robbed a thief cannot get out. 
+ One type of malice is to ask your password. If you keep it in your mind, you might just give by clicking the link and going to website (fake of course). With manager it might just recognise that there is something wrong with the webpage.
+ Managers also prevent keystroke logging, because you don't have to type it, even there is camera or keystroke-logger installed on your computer you're safe.
+ Sniffing is also prevented, because password doesn't travel through your network
 
-Source: 
- https://www.doherty.co.uk/blog/the-benefits-of-a-password-manager/
- https://www.passwordstore.org/
+Sources: 
+ https://www.doherty.co.uk/blog/the-benefits-of-a-password-manager/ 
+ https://www.passwordstore.org/ 
+ https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers 
+  Joe Kissell,2024,  Take Control of Your Passwords, 4th Edition, Published by Take Control Books, https://learning.oreilly.com/library/view/take-control-of/9781492066408/
  
 p### g) Refer to sources. 
+DONE
 
-Verify each homework report (this and the earlier ones) refers to sources. Every homework report should refer to this task page. It should also have references to any other source used, such as web pages, LLMs, man pages, other reports... References are mandatory, and must be present in every report. (This subtask does not need a report, you can just do it and write "Done." as the answer for this subtask.)
