@@ -161,12 +161,13 @@ Using pass in my new best friend VM linux
    The generated password for hobby/catchmeifyoucan is:
    SFHWk`a'kP2;>Jd!($ZU9!i.i
 6. now it looks like this
-   Password Store
-├── business
-│   └── home-alone-2
-└── hobby
-    └── catchmeifyoucan
- 7. you can easily copy it clipboard which clears itself in 45 seconds, tested and worked
+
+      Password Store
+    
+      └── hobby
+  
+        └── catchmeifyoucan
+ 8. you can easily copy it clipboard which clears itself in 45 seconds, tested and worked
 
 #### And why you should have this kind of keep?
  It is not possible (for most of us though) to remember all passwords for all different applications, webshops, stores etc.
@@ -181,9 +182,12 @@ Using pass in my new best friend VM linux
 
 Sources: 
  https://www.doherty.co.uk/blog/the-benefits-of-a-password-manager/ 
+ 
  https://www.passwordstore.org/ 
+ 
  https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers 
-  Joe Kissell,2024,  Take Control of Your Passwords, 4th Edition, Published by Take Control Books, https://learning.oreilly.com/library/view/take-control-of/9781492066408/
+ 
+ Joe Kissell,2024,  Take Control of Your Passwords, 4th Edition, Published by Take Control Books, https://learning.oreilly.com/library/view/take-control-of/9781492066408/
  
 p### g) Refer to sources. 
 DONE
