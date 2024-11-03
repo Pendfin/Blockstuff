@@ -1,9 +1,11 @@
 These homeworks and links are from https://terokarvinen.com/trust-to-blockchain/#r2-blockchain-to-cryptocurrency
 
 ## x) Read and summarize (with some bullet points)
+
 Source:Schneier, B. 2015. chapter 2 Applied cryptography, second edition: Protocols, algorithms, and source code in C. 20th anniversary edition ; Second edition. Indianapolis, IN: Wiley.(https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/)
-Chapters 
-2.5 - 2.8
+Chapters 2.5 - 2.8
+#### Overview
+Chapters explains.....
 #### Chapter 2.5 communications using symmetric cryptography
   - history of public key. Invented in 1976 by Whitfield Diffie and Martin Hellman
   - simple analogy to mailbox. Anyone can send message, but only few or one can read it
@@ -34,7 +36,33 @@ Chapters
   - pseudo-random sequence looks random. The sequence should be as long as you need random number
   - Cryptographic demands for swecure pseudo-random sequence are: it looks random,unpredictability, not reproducerable
 
+ 
  Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
+
+#### Chapter 2. Cryptographic hash functions and digital signatures
+  Chapter 2 of Rosenbaum's book Grokking Bitcoin (Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/) presents a simplified examples of consepts of blockchain, hash, hash function, digital signature, public and secret key. It also describes controversial history of who invented public key andm some weaknesses of applications. In the it presents dilemma of security vs. usabilility (in large sense of usability). Most secure ways of keeping e.g. your private key safe are the most inconvinient ways.
+Some bullet point
+  - Cookien token - you can create your own cryptocurrency - simplified approach to Bitcoin
+  - cryptorgraphic hash = digital fingerprint, one of the main
+  - hash - and hash function  - hash is fingerprint or a unique stamp which is created with hash function. Hash function is mathematic algorithm to convert your data to hash. Which is though almost always unique.
+    -  four basic propertiesof hash fuunction:
+      -  The same input will always produce the same hash.
+      -  Slightly different inputs will produce very different hashes.
+      -  The hash is always of the same fixed size. For SHA256, it’s 256 bits.
+      -  Brute-force trial and error is the only known way to find an input that gives a certain hash
+    - the last on has three properties
+      - collision resistance - you try to create same hash with different sources (almost impossible)
+      - pre-image resistance - you try to create the known hash with different sources
+      - second pre-image resistance  - you try to create the known hash with different source when you know the original source
+  - hash function is one way function so you can't reverse engineer it. Meaning even though you now the outcome and function you can't create all the possible sourcese
+  - Digital signature uses private-public key pairs
+  - Private key to sign and public key to verify signature
+  - Derivation function is one-way function to create public key from your private key
+  - You can use private-public key pairs also for communication when using public key to encrypt the message. Bitcon uses only private key for encrypting so anyone can decrypt crypted contains e.g. when digitally signing
+   
+    
+
+
 
 Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg
 
@@ -44,6 +72,7 @@ Explain how you have used public key cryptography today or yesterday, outside of
 
 When doing my thesis I have to
 Whatsapp - when senging message
+HTTPS : Pankkiasiointi
 
 Source https://www.ibm.com/think/topics/public-key-infrastructure
 https://en.wikipedia.org/wiki/End-to-end_encryption
