@@ -83,9 +83,27 @@ Send an encrypted and signed message using PGP, then verify and decrypt it. (You
 
 #### Let's go
 Using https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ as guide to crawl through this task
-Doing this on with Virtual Machine......
-1. Installing the tools - 
-2.   
+Doing this on with Virtual Machine...... you can find more detailed logs here https://github.com/Pendfin/Blockstuff/blob/main/h2_logs
+1. Installing the tools - done, even though newest version claimed to be in VM still installed micri
+2. Generating the key with the name Perttu Salo DEMO KEY  for email perttus@example.com.invalid, no passphase
+3. Generating complete, we have a keypair for Perttu, and exported to perttus.pub file
+4. Now creating Alice to communicate with. Alice is a folder in  our home directory
+5. Create the configuration files to make it possibly to create separate keys
+6. Created own keypair for Alice to be able to simulate communication
+7. Distribute Perttus public key to Alice (copy from home folder to Alice's), and now I can see both keys in Alice's keyring
+8. Signing the key to make it trusted  - and in perttus we trust
+9. Do it another way around - delivering alice's public key to Perttus and trusting it
+10. And now writing message with editor -
+11. "Hi Perttus
+This is my try-out to establish a secret connection with you.
+Hope it goes well.
+Alice"
+12. Encrypted the message with perttus public key and sing it using alice's private key
+13. Send the pigeon! So iI just copy the created crypted file from Alice's folder to Perttus
+14. Perttus decrypts the message with his private key and can confirm (with Alice public key) that it was signed with alice private key
+15. So perttus send the respond back. Encrypts teh message with Alices public key and signs teh message with his private key
+16. Alice decryots the message with her private key and verify the signature with Perttus public key
+17. Well-done
 
 
 ### c) Other tool. 
@@ -94,11 +112,16 @@ Encrypt a message using a tool other than PGP. Explain how different parties use
 ### d) Eve and Mallory.
 
 In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory malliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific what features, which use of keys and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
+PGP protects in multiple ways messaging:
+For EVE - 
+For Mallory - 
 
 
 ### f) Password management. 
-
 Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
+Password management
+
+Sourcehttps://www.passwordmanager.com/best-linux-password-managers/
 
 ### g) Refer to sources. 
 
