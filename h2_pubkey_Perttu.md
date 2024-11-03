@@ -37,13 +37,11 @@ Source: Schneier, B. 2015. chapters 2.5-2.8 Applied cryptography, second edition
   - Cryptographic demands for swecure pseudo-random sequence are: it looks random,unpredictability, not reproducerable
 
  
- Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
-
 ### Chapter 2. Cryptographic hash functions and digital signatures by Kalle Rosenbaum
-  Chapter 2 of Rosenbaum's book Grokking Bitcoin (Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/) presents a simplified examples of consepts of blockchain, hash, hash function, digital signature, public and secret key.  In the it presents dilemma of security vs. usabilility (in large sense of usability). Most secure ways of keeping e.g. your private key safe are the most inconvinient ways.
+Chapter 2 of Rosenbaum's book Grokking Bitcoin (Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/) presents a simplified examples of consepts of blockchain, hash, hash function, digital signature, public and secret key.  In the it presents dilemma of security vs. usabilility (in large sense of usability). Most secure ways of keeping e.g. your private key safe are the most inconvinient ways.
 Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
 
-#### Some bullet point
+#### Some bullet points
   - Cookien token - you can create your own cryptocurrency - simplified approach to Bitcoin
   - cryptorgraphic hash = digital fingerprint, one of the main
   - hash - and hash function  - hash is fingerprint or a unique stamp which is created with hash function. Hash function is mathematic algorithm to convert your data to hash. Which is though almost always unique.
@@ -63,10 +61,11 @@ Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learn
   - You can use private-public key pairs also for communication when using public key to encrypt the message. Bitcon uses only private key for encrypting so anyone can decrypt crypted contains e.g. when digitally signing
    
     
+### Overview of PGP - Send Encrypted and Signed Message
+Guide to send encrypted messages describes how to create public and private keys, how to simulate creating the trust each other and detailed instructions how to sen crypted messages with gpg
 
-
-
-Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg
+Source: Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg (https://terokarvinen.com/2023/pgp-encrypt-sign-verify/)
+  
 
 ### a) Pubkey today.
 
@@ -80,8 +79,14 @@ Source https://www.ibm.com/think/topics/public-key-infrastructure
 https://en.wikipedia.org/wiki/End-to-end_encryption
 
 ### b) Messaging.
-
 Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
+
+#### Let's go
+Using https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ as guide to crawl through this task
+Doing this on with Virtual Machine......
+1. Installing the tools - 
+2.   
+
 
 ### c) Other tool. 
 Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
@@ -89,6 +94,7 @@ Encrypt a message using a tool other than PGP. Explain how different parties use
 ### d) Eve and Mallory.
 
 In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory malliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific what features, which use of keys and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
+
 
 ### f) Password management. 
 
