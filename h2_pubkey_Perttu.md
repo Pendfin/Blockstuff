@@ -116,6 +116,12 @@ Alice"
 Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
 Proton
 openssh - you can establish remote secure remote connection with it and it encrypts all the traffic
+Putty - ssh - using crypted
+AGE - 
+1. installing it $ first apt install age
+2. 
+
+https://github.com/FiloSottile/age?tab=readme-ov-file#readme
 
 
 
