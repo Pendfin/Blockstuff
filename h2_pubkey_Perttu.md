@@ -1,11 +1,11 @@
 These homeworks and links are from https://terokarvinen.com/trust-to-blockchain/#r2-blockchain-to-cryptocurrency
 
-## x) Read and summarize (with some bullet points)
+##  Task x) Read and summarize (with some bullet points)
 
-Source:Schneier, B. 2015. chapter 2 Applied cryptography, second edition: Protocols, algorithms, and source code in C. 20th anniversary edition ; Second edition. Indianapolis, IN: Wiley.(https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/)
-Chapters 2.5 - 2.8
-#### Overview
-Chapters explains.....
+### Overview of Applied Cryptography by Bruce Schneier 
+Chapters explains basic concepts of symmetric cryptography, digital signature and random sequences.
+It also describes controversial history of who invented public key and some weaknesses of applications.
+Source: Schneier, B. 2015. chapters 2.5-2.8 Applied cryptography, second edition: Protocols, algorithms, and source code in C. 20th anniversary edition ; Second edition. Indianapolis, IN: Wiley.(https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/
 #### Chapter 2.5 communications using symmetric cryptography
   - history of public key. Invented in 1976 by Whitfield Diffie and Martin Hellman
   - simple analogy to mailbox. Anyone can send message, but only few or one can read it
@@ -39,9 +39,11 @@ Chapters explains.....
  
  Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
 
-#### Chapter 2. Cryptographic hash functions and digital signatures
-  Chapter 2 of Rosenbaum's book Grokking Bitcoin (Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/) presents a simplified examples of consepts of blockchain, hash, hash function, digital signature, public and secret key. It also describes controversial history of who invented public key andm some weaknesses of applications. In the it presents dilemma of security vs. usabilility (in large sense of usability). Most secure ways of keeping e.g. your private key safe are the most inconvinient ways.
-Some bullet point
+### Chapter 2. Cryptographic hash functions and digital signatures by Kalle Rosenbaum
+  Chapter 2 of Rosenbaum's book Grokking Bitcoin (Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/) presents a simplified examples of consepts of blockchain, hash, hash function, digital signature, public and secret key.  In the it presents dilemma of security vs. usabilility (in large sense of usability). Most secure ways of keeping e.g. your private key safe are the most inconvinient ways.
+Source: Rosenbaum, K 2019. Grokking Bitcoin. Manning Publications (https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/)
+
+#### Some bullet point
   - Cookien token - you can create your own cryptocurrency - simplified approach to Bitcoin
   - cryptorgraphic hash = digital fingerprint, one of the main
   - hash - and hash function  - hash is fingerprint or a unique stamp which is created with hash function. Hash function is mathematic algorithm to convert your data to hash. Which is though almost always unique.
