@@ -173,8 +173,8 @@ In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Ma
 Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
 Password management
 Using pass in my new best friend VM linux
-1. install the password manager pass for ubuntu/debian
-2. created my own password storage for
+1. Install the password manager pass for ubuntu/debian
+2. Created my own password storage for
  $ pass init "pendfin Password Storage Key" 
  mkdir: created directory '/home/perttus/.password-store/' 
  Password store initialized for pendfin Password Storage Key 
@@ -190,19 +190,20 @@ Using pass in my new best friend VM linux
      $ pass insert business/home-alone-2
      Enter password for business/home-alone-2: 
      Retype password for business/home-alone-2:
-4. now i have a storage in my passworfd storage for business
+4. Now i have a storage in my passworfd storage for business
 5. I'll create passwords for my hobby
    $ pass generate hobby/catchmeifyoucan
    mkdir: created directory '/home/perttus/.password-store/hobby'
    The generated password for hobby/catchmeifyoucan is:
    SFHWk`a'kP2;>Jd!($ZU9!i.i
-6. now it looks like this
+6. Now it looks like this
 
       Password Store
     
       └── hobby
   
         └── catchmeifyoucan
+ 
  8. you can easily copy it clipboard which clears itself in 45 seconds, tested and worked
 
 #### And why you should have this kind of keep?
