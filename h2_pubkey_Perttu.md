@@ -91,7 +91,7 @@ https://www.cloudflare.com/learning/ssl/how-does-public-key-encryption-work/
 Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
 
 #### Let's go
-Using https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ as guide to crawl through this task
+Using https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ as guide to crawl through this task.
 Doing this on with Virtual Machine (Debian GNU/Linux 12/64-bit, Xfce version 4.18) running in Oracle virtual toolbox.
 If interest exact steps -  you can find more detailed logs here https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
 1. Installing the tools (gpg) - done, even though newest version claimed to be in VM still installed micro
