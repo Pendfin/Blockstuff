@@ -98,7 +98,7 @@ If interest exact steps -  you can find more detailed logs here https://github.c
 2. Generating the key with the name Perttu Salo DEMO KEY  for email perttus@example.com.invalid, no passphase
 3. Generating complete, we have a keypair for Perttu, and exported to perttus.pub file
 4. Now creating Alice to communicate with. Alice is a folder in my home directory
-5. Create the configuration files to make it possibly to create separate keys
+5. Create the configuration files to make it possible to create separate keys
 6. Created own keypair for Alice to be able to simulate communication
 7. Distribute Perttus public key to Alice (copy from home folder to Alice's), and now I can see both keys in Alice's keyring
 8. Signing the key to make it trusted  - and in perttus we trust
