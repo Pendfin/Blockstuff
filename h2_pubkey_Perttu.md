@@ -226,6 +226,6 @@ Sources:
  
  Joe Kissell,2024,  Take Control of Your Passwords, 4th Edition, Published by Take Control Books, https://learning.oreilly.com/library/view/take-control-of/9781492066408/
  
-p### g) Refer to sources. 
+### g) Refer to sources. 
 DONE
 
