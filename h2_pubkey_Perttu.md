@@ -113,19 +113,37 @@ Alice"
 
 
 ### c) Other tool. 
-Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
-Proton
-openssh - you can establish remote secure remote connection with it and it encrypts all the traffic
-Putty - ssh - using crypted
-AGE - my debian VM
-1. installing it $ first apt install age
-2. generating key $ age-keygen -o key.txt
+
+Tool chosen:age  - installet @ my debian VM
+
+1. installing it --- $ first apt install age
+2. generating key --- $ age-keygen -o key.txt
 Public key: age1fkzvchzwy3y6gkn7ng23ya0dkn23n43tg5qvfy3hm59jk4x72pesjddu7r
-3. 
+3. one can encrypt the message with passphrase ---$ age -e -p -o message42.txt message32.txt
+ge-encryption.org/v1
+-> scrypt K488gqA4MOofs/4WTr1Xmg 18
+l4EdUd6+MCK+5Ws2pUGFhrdV
+gjfV6889ngqZjbYbmGE
+--- Lmy6vTQ8pRRGWTeVeNH5auK1EbzBGrvShWByKIp/oU4
+�����#������gv`�	W��Q�����:L��g�J�Ƃ�ܽ*�G.{�C��
+5. When using passphares you don't need to know the recipient - and you can have your own secret symmetric way of dealing keys
+6. decrypting the file $ age -d  -o message52.txt message42.txt with passphrase--> success
+7. trying to share keys --- waking up the alice again
+8. encrypting with message with ---$ age -e -i akey.txt -o acrypt.txt amess.txt
+9. akey.txt is alices public key
+10. copying it to alice's folder --- /alice$
+11. decrypting with public key in the file where i've collected my friends --/alice$ age -d -i akey.txt -o amiss.txt acrypt.txt
+You can use files easily when collecting recipients public keys for ecrypting. You can also use SSH-keys
+13. creating ssh-keys --- $ ssh-keygen --> perttussh.pub and perttussh
+14. using ssh-key for decrypting --- $ age -R perttussh.pub akey.txt > example.jpg.age
+15. decrypting ---$ age -d -i perttussh example.jpg.age > puravain.txt
 
+So how secure this is? Same problem if using public keys or private keys - you have to keep those secure and safe. Possible and easy way is to protect your key with passphrase (like in ssh). You can also put those in your github-page and generate them time to time. With age you can fetch those keys straight form github and use for encrypting. Encrpting algorithms are good and you can use several kinds of them
+
+Sources:
 https://github.com/FiloSottile/age?tab=readme-ov-file#readme
-
-
+https://htmlpreview.github.io/?https://github.com/FiloSottile/age/blob/main/doc/age.1.html#RECIPIENTS-AND-IDENTITIES
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ### d) Eve and Mallory.
 Using sources: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ and https://github.com/Pendfin/Blockstuff/blob/main/h2_logs.md
