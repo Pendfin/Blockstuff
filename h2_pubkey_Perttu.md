@@ -112,7 +112,7 @@ Alice"
 13. Send the pigeon! So iI just copy the created crypted file from Alice's folder to Perttus
 14. Perttus decrypts the message with his private key and can confirm (with Alice public key) that it was signed with alice private key
 15. So perttus send the respond back. Encrypts teh message with Alices public key and signs teh message with his private key
-16. Alice decryots the message with her private key and verify the signature with Perttus public key
+16. Alice decrypts the message with her private key and verify the signature with Perttus public key
 17. Well-done
 
 
