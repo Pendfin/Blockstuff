@@ -80,8 +80,11 @@ All starts with handshake, knowing each other and version, cipher suites, identi
 
 Sources:
 https://en.wikipedia.org/wiki/Public_key_infrastructure
+
 https://www.identity.com/digital-certificates-key-to-secure-online-transactions/#Understanding_Public_Key_Infrastructure_PKI_and_Its_Role_in_Digital_Certificates
+
 https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/
+
 https://www.cloudflare.com/learning/ssl/how-does-public-key-encryption-work/
 
 ### b) Messaging.
@@ -143,7 +146,9 @@ So how secure this is? Same problem if using public keys or private keys - you h
 
 Sources:
 https://github.com/FiloSottile/age?tab=readme-ov-file#readme
+
 https://htmlpreview.github.io/?https://github.com/FiloSottile/age/blob/main/doc/age.1.html#RECIPIENTS-AND-IDENTITIES
+
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ### d) Eve and Mallory.
