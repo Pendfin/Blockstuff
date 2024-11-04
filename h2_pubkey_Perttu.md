@@ -117,9 +117,11 @@ Encrypt a message using a tool other than PGP. Explain how different parties use
 Proton
 openssh - you can establish remote secure remote connection with it and it encrypts all the traffic
 Putty - ssh - using crypted
-AGE - 
+AGE - my debian VM
 1. installing it $ first apt install age
-2. 
+2. generating key $ age-keygen -o key.txt
+Public key: age1fkzvchzwy3y6gkn7ng23ya0dkn23n43tg5qvfy3hm59jk4x72pesjddu7r
+3. 
 
 https://github.com/FiloSottile/age?tab=readme-ov-file#readme
 
