@@ -118,7 +118,7 @@ Alice"
 
 ### c) Other tool. 
 
-Tool chosen:age  - installet @ my debian VM
+Tool chosen: age  - installed @ my debian VM
 
 1. installing it --- $ first apt install age
 2. generating key --- $ age-keygen -o key.txt
