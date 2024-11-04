@@ -75,6 +75,7 @@ TLS provides
  - encryption
  - authentication
  - integrity
+   
 All starts with handshake, knowing each other and version, cipher suites, identities and generating the session keys which are used to encrypt future messaging. TLS uses public key cryptography to find the right keys for our sessions, but also authentication. Server proves its authenticity with private-key crypted message wich I at my end can verify with public key.
 
 Sources:
