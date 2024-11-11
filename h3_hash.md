@@ -5,10 +5,16 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
 - 
 Source: Schneier, B. 2015. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley.
 ### Cracking passwords with Hashcat
--
+- Hashcat is a program or a tool find or crack the hashes
+- you use it with a dictionary with words e.g. possible passwords
+- you choose the most propable hash type and run the program against hash id (the hash you try to crack)
+- results is either cracked or failedmkdir hashed
 Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
 ### Command line basics
--
+- list of basic commands you need when using linux
+- gives you hands on examples of how to create files, directories and how to manipulate and delete those
+- it also shows how to connect via ssh to another computer
+- and some tips when to use tabs, pipes and administrative commands
 
 Source: Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
 
@@ -33,6 +39,12 @@ Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt
 - hash is the same length as it should always be
 Help with commands Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
 ### c) Hashcat
+Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
+- create directory for play cd hashed
+- download hashcat
+- unpack it
+- check the contents
+- ready to rock 
 
 ### d) Dictionary attack.
 
