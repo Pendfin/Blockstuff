@@ -15,6 +15,8 @@ Source: Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2
 € Santos et al 2017
 ### a) Billion dollar busywork
 Command 'echo -n "hello"|sha256sum' prints a hash. Try adding something to the string, e.g. 'echo -n 'hello asdf'|sha256sum'. What do you have to add to get a hash that starts with a zero? (Voluntary bonus: How is this related to Bitcoin? Voluntary difficult bonus: How many zeros can you get to the beginning? Voluntary difficult bonus: How does the difficulty raise?)
+- first put something stupid like hellokello--> echo -n "hellokello"|sha256sum.This results 008a8ab2f87506883da9a9c907112a3c44198244a0acfb4b011a0033e93ef536--> actually twoo zeroes
+- this is related to bitcoin?
 
 ### b) Compare hash
 
