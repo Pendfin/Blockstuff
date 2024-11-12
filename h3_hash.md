@@ -2,8 +2,13 @@
 Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#homework
 ## x) Read and summarize
 ###  2.3.One-way Fuctions 2.4 One-Way Hash Functions
-- one way function is a function that works one way. Easy from source to target, hard or almost impossible other way around
-- 
+- one-way function is a function that works one way. Easy from source to target, hard or almost impossible other way around
+- one-way function can be used to encryption
+- trap door one way function gives you means to crack the function also into two way-function
+- one-way hash function is a function that takes what ever size input string and converts it fixed (depends of function) length string which is called hash value
+- it is basically a fingerprint of that string (also called pre-image)
+- hash function being collision free means that there should not be two different pre-images with same hash
+- Message authentication code (MAC or DAC) is hash function with the key to verify the hash created of pre-image
 Source: Schneier, B. 2015. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley.
 ### Cracking passwords with Hashcat
 - Hashcat is a program or a tool find or crack the hashes
@@ -16,14 +21,12 @@ Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com
 - gives you hands on examples of how to create files, directories and how to manipulate and delete those
 - it also shows how to connect via ssh to another computer
 - and some tips when to use tabs, pipes and administrative commands
-
 Source: Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
-
 € Santos et al 2017
 ### a) Billion dollar busywork
 Command 'echo -n "hello"|sha256sum' prints a hash. Try adding something to the string, e.g. 'echo -n 'hello asdf'|sha256sum'. What do you have to add to get a hash that starts with a zero? (Voluntary bonus: How is this related to Bitcoin? Voluntary difficult bonus: How many zeros can you get to the beginning? Voluntary difficult bonus: How does the difficulty raise?)
 - first put something stupid like hellokello-->$ echo -n "hellokello"|sha256sum.This results 008a8ab2f87506883da9a9c907112a3c44198244a0acfb4b011a0033e93ef536--> actually two zeroes
-- this is related to bitcoin?
+- this is related to bitcoin? It is used to authenticate the transactions - so you can trust that those are not altered
 
 ### b) Compare hash
 Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt'). Change one letter. Take the hash again. Compare hashes. What do you notice?
@@ -121,8 +124,9 @@ Analyzing '21232f297a57a5a743894a0e4a801fc3'
 - skipping this
 
 ### i) my hash
-
+- skipping this
 ### j) John. Install Jumbo
+Source; https://terokarvinen.com/2023/crack-file-password-with-john/
 - Installing with instructions, skipping micro because it is already installed--> hashed$ $ sudo apt-get -y install bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wge
 - downloading it --> hashed$ git clone --depth=1 https://github.com/openwall/john.git
 - making the directory and creating makefile
@@ -171,4 +175,32 @@ adxcsouf2john.py
 - and running it $HOME/john/run/john--> John the Ripper 1.9.0-jumbo-1+bleeding-b86611a49b 2024-11-12 01:11:22 +0100 OMP [linux-gnu 64-bit x86_64 AVX2 AC]
   
 ### k) Crack file password with John
+Source: https://terokarvinen.com/2023/crack-file-password-with-john/
+- Getting the file to crack wget https://TeroKarvinen.com/2023/crack-file-password-with-john/tero.zip
+- Trying to unzip it - doesn't work
+- Calling John to help me and create me a hash --> $HOME/john/run/zip2john tero.zip >tero.zip.hash
+- CheckinK tero.zip.hash exists - yes it does
+- running John with Tero and attack -->$HOME/john/run/john tero.zip.hash
+- success: password was found
+- sing default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Warning: OpenMP is disabled; a non-OpenMP build may be faster
+Note: Passwords longer than 21 [worst case UTF-8] to 63 [ASCII] rejected
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+0g 0:00:00:00 DONE 1/3 (2024-11-12 20:09) 0g/s 444773p/s 444773c/s 444773C/s Mdzip1900..Msecret1900
+Proceeding with wordlist:/home/perttus/john/run/password.lst
+Enabling duplicate candidate password suppressor
+butterfly        (tero.zip/secretFiles/SECRET.md)     
+1g 0:00:00:00 DONE 2/3 (2024-11-12 20:09) 3.226g/s 276938p/s 276938c/s 276938C/s butterfly..december
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+- unzip the file and....
+- You've found the secret, well done!
+You have now completed the tutorial. 
+Did you know that Jumbo John can handle many other file formats, too [1]?
+[1] https://TeroKarvinen.com/2023/crack-file-password-with-john/
+
+
 
