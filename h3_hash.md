@@ -1,7 +1,8 @@
 # h3 hashing
 Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#homework
 ## x) Read and summarize
-###  One-way Fuctions 2.4 One-Way Hash Functions
+###  2.3.One-way Fuctions 2.4 One-Way Hash Functions
+- one way function is a function that works one way. Easy from source to target, hard or almost impossible other way around
 - 
 Source: Schneier, B. 2015. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley.
 ### Cracking passwords with Hashcat
@@ -38,6 +39,7 @@ Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt
 - almost everything changed - I cannot detect has one, two or all the letters changed
 - hash is the same length as it should always be
 Help with commands Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
+
 ### c) Hashcat
 Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
 - create directory for play --> $ cd hashed
@@ -63,6 +65,7 @@ Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com
 -Exhausted ,Started: Tue Nov 12 17:46:19 2024,Stopped: Tue Nov 12 17:49:09 2024
 - no match, of course, the text was pretty good and not in the file rockyou.txt
 - so it's working, no file was createdcat
+
 ### d) Dictionary attack.
 Source: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
 - first, find out what kind of hash is this 21232f297a57a5a743894a0e4a801fc3?
@@ -86,17 +89,86 @@ Analyzing '21232f297a57a5a743894a0e4a801fc3'
 [+] DNSSEC(NSEC3) [Hashcat Mode: 8300]
 [+] RAdmin v2.x [Hashcat Mode: 9900]
 - what should I choose? I take MD5, because the guide recommends it to be common
-- try to crack it
+- try to crack it--> hashcat -m 0 '21232f297a57a5a743894a0e4a801fc3' rockyou.txt -o ratkaisu1
+- the solution in file ratkaisu1 --> hashed$ cat ratkaisu1
+- 21232f297a57a5a743894a0e4a801fc3:admin
+- doesn't seem so unique to me - cracked
 
 ### e) How can you make a password that's protected against a dictionary attack?
-
+- you can create your own long password with uniquenes
+- you can use passphrase which might be something personal or in finnish or savo
+- you can use Salt, a way to complicate the hashes created from the passwords and stored in password file
+  - but it only makes cracking harder, not impossible because it adds a string before using the one-way function
+- and finally you can't, there is always a tiny small possibility that someone will crack it    
+- Source: Schneier, B. 2015. Chapter 3 Basic protocols and chapter 8 Key management, Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley 
 ### f) Voluntary: Two minute job
+- idenitfying what kind of hash this is --> hashed$ hashid -m '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
+- Analyzing '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
+[+] Blowfish(OpenBSD) [Hashcat Mode: 3200]
+[+] Woltlab Burning Board 4.x 
+[+] bcrypt [Hashcat Mode: 3200]
+- running with 3200 and rockypuo file -->hashed$ hashcat -m 3200 '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu' rockyou.txt -o ratkaisu2
+- with rockyou i found find the solution--> $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu:12345
+- pure luck? some warnings while cracking -to update or use parallellization but it worked
 
 ### g) Voluntary bonus: Where do you want to go today?
-
+- finding parameters for hash ewith hashid --> hashed$ hashid -m f2477a144dff4f216ab81f2ac3e3207d
+- Windows NTLM? it seems to be [+] NTLM [Hashcat Mode: 1000]
+- try to crack it --> /hashed$ hashcat -m 1000 'f2477a144dff4f216ab81f2ac3e3207d' rockyou.txt -o ratkaisu3
+- cracked-->hashed$ cat ratkaisu3
+- f2477a144dff4f216ab81f2ac3e3207d:monkey--> this doesn't seem to be answer to the question? did I use so
 ### h) Voluntary bonus: Embarassingly parallel
+- skipping this
+
+### i) my hash
 
 ### j) John. Install Jumbo
+- Installing with instructions, skipping micro because it is already installed--> hashed$ $ sudo apt-get -y install bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wge
+- downloading it --> hashed$ git clone --depth=1 https://github.com/openwall/john.git
+- making the directory and creating makefile
+- one error missing openssl (trying to install it, didn't work) -->  sudo apt-get -y install openssl
+- continuing to compile--> no make can do---> deleting all files and starting over again in main directory
+- doesn't find the file packages E: Unable to locate package zlib-gst
+- trying to upgrade packages with sudo apt-upgrade
+- finding out is there actually different packages for zip--> $ sudo apt-get -y install zziplib-bin
+- cloning john again and creating folders
+- some kind of success
+  Configured for building John the Ripper jumbo:
 
+Target CPU ......................................... x86_64 AVX2, 64-bit LE
+AES-NI support ..................................... depends on OpenSSL
+Target OS .......................................... linux-gnu
+Cross compiling .................................... no
+Legacy arch header ................................. x86-64.h
+
+Optional libraries/features found:
+Memory map (share/page large files) ................ yes
+Fork support ....................................... yes
+OpenMP support ..................................... yes (not for fast formats)
+OpenCL support ..................................... no
+Generic crypt(3) format ............................ yes
+OpenSSL (many additional formats) .................. yes
+libgmp (PRINCE mode and faster SRP formats) ........ no
+128-bit integer (faster PRINCE mode) ............... yes
+libz (7z, pkzip and some other formats) ............ yes
+libbz2 (7z and gpg2john bz2 support) ............... yes
+libpcap (vncpcap2john and SIPdump) ................. no
+Non-free unrar code (complete RAR support) ......... yes
+librexgen (regex mode, see doc/README.librexgen) ... no
+OpenMPI support (default disabled) ................. no
+Experimental code (default disabled) ............... no
+ZTEX USB-FPGA module 1.15y support ................. no
+
+Install missing libraries to get any needed features that were omitted.
+
+Configure finished.  Now "make -s clean && make -sj1" to compile.
+- make -s clean && make -sj4 (because instruction said to use -sj4)
+- Took a while and fan was screaming--> process completed
+- lots of stuff in /john/run$ ls -1
+1password2john.py
+7z2john.pl
+adxcsouf2john.py
+- and running it $HOME/john/run/john--> John the Ripper 1.9.0-jumbo-1+bleeding-b86611a49b 2024-11-12 01:11:22 +0100 OMP [linux-gnu 64-bit x86_64 AVX2 AC]
+  
 ### k) Crack file password with John
 
