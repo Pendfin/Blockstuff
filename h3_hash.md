@@ -98,12 +98,13 @@ Analyzing '21232f297a57a5a743894a0e4a801fc3'
 - doesn't seem so unique to me - cracked
 
 ### e) How can you make a password that's protected against a dictionary attack?
+-Source: Schneier, B. 2015. Chapter 3 Basic protocols and chapter 8 Key management, Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley 
 - you can create your own long password with uniquenes
 - you can use passphrase which might be something personal or in finnish or savo
 - you can use Salt, a way to complicate the hashes created from the passwords and stored in password file
   - but it only makes cracking harder, not impossible because it adds a string before using the one-way function
 - and finally you can't, there is always a tiny small possibility that someone will crack it    
-- Source: Schneier, B. 2015. Chapter 3 Basic protocols and chapter 8 Key management, Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley 
+
 ### f) Voluntary: Two minute job
 - idenitfying what kind of hash this is --> hashed$ hashid -m '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
 - Analyzing '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
@@ -115,16 +116,17 @@ Analyzing '21232f297a57a5a743894a0e4a801fc3'
 - pure luck? some warnings while cracking -to update or use parallellization but it worked
 
 ### g) Voluntary bonus: Where do you want to go today?
-- finding parameters for hash ewith hashid --> hashed$ hashid -m f2477a144dff4f216ab81f2ac3e3207d
+- finding parameters for hash with hashid --> hashed$ hashid -m f2477a144dff4f216ab81f2ac3e3207d
 - Windows NTLM? it seems to be [+] NTLM [Hashcat Mode: 1000]
 - try to crack it --> /hashed$ hashcat -m 1000 'f2477a144dff4f216ab81f2ac3e3207d' rockyou.txt -o ratkaisu3
 - cracked-->hashed$ cat ratkaisu3
-- f2477a144dff4f216ab81f2ac3e3207d:monkey--> this doesn't seem to be answer to the question? did I use so
+- f2477a144dff4f216ab81f2ac3e3207d:monkey--> this doesn't seem to be answer to the question? but it is what i got
+
 ### h) Voluntary bonus: Embarassingly parallel
 - skipping this
-
 ### i) my hash
 - skipping this
+
 ### j) John. Install Jumbo
 Source; https://terokarvinen.com/2023/crack-file-password-with-john/
 - Installing with instructions, skipping micro because it is already installed--> hashed$ $ sudo apt-get -y install bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wge
