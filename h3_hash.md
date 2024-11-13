@@ -9,20 +9,22 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
 - it is basically a fingerprint of that string (also called pre-image)
 - hash function being collision free means that there should not be two different pre-images with same hash
 - Message authentication code (MAC or DAC) is hash function with the key to verify the hash created of pre-image
-Source: Schneier, B. 2015. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley.
+- Source: Schneier, B. 2015. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley.
+
 ### Cracking passwords with Hashcat
 - Hashcat is a program or a tool find or crack the hashes
 - you use it with a dictionary with words e.g. possible passwords
 - you choose the most propable hash type and run the program against hash id (the hash you try to crack)
 - results is either cracked or failedmkdir hashed
-Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
+- Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
+
 ### Command line basics
 - list of basic commands you need when using linux
 - gives you hands on examples of how to create files, directories and how to manipulate and delete those
 - it also shows how to connect via ssh to another computer
 - and some tips when to use tabs, pipes and administrative commands
-Source: Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
-€ Santos et al 2017
+- Source: Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
+## Exercises
 ### a) Billion dollar busywork
 Command 'echo -n "hello"|sha256sum' prints a hash. Try adding something to the string, e.g. 'echo -n 'hello asdf'|sha256sum'. What do you have to add to get a hash that starts with a zero? (Voluntary bonus: How is this related to Bitcoin? Voluntary difficult bonus: How many zeros can you get to the beginning? Voluntary difficult bonus: How does the difficulty raise?)
 - first put something stupid like hellokello-->$ echo -n "hellokello"|sha256sum.This results 008a8ab2f87506883da9a9c907112a3c44198244a0acfb4b011a0033e93ef536--> actually two zeroes
@@ -41,10 +43,9 @@ Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt
 90f535b5ffa6e302e1b2c3dbe333301ccfb95a2865d0086b565be8a1ecfdecfb
 - almost everything changed - I cannot detect has one, two or all the letters changed
 - hash is the same length as it should always be
-Help with commands Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
+- Help with commands Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
 
 ### c) Hashcat
-Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
 - create directory for play --> $ cd hashed
 - download hashcat -->hashed$ wget https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
 - unpack it -->hashed$ tar xf rockyou.txt.tar.gz
@@ -96,14 +97,15 @@ Analyzing '21232f297a57a5a743894a0e4a801fc3'
 - the solution in file ratkaisu1 --> hashed$ cat ratkaisu1
 - 21232f297a57a5a743894a0e4a801fc3:admin
 - doesn't seem so unique to me - cracked
+- Source: Karvinen 2022: Cracking Passwords with Hashcat (https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
 
 ### e) How can you make a password that's protected against a dictionary attack?
--Source: Schneier, B. 2015. Chapter 3 Basic protocols and chapter 8 Key management, Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley 
 - you can create your own long password with uniquenes
 - you can use passphrase which might be something personal or in finnish or savo
 - you can use Salt, a way to complicate the hashes created from the passwords and stored in password file
   - but it only makes cracking harder, not impossible because it adds a string before using the one-way function
 - and finally you can't, there is always a tiny small possibility that someone will crack it    
+- Source: Schneier, B. 2015. Chapter 3 Basic protocols and Chapter 8 Key management, Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. New York: Wiley 
 
 ### f) Voluntary: Two minute job
 - idenitfying what kind of hash this is --> hashed$ hashid -m '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
@@ -111,9 +113,9 @@ Analyzing '21232f297a57a5a743894a0e4a801fc3'
 [+] Blowfish(OpenBSD) [Hashcat Mode: 3200]
 [+] Woltlab Burning Board 4.x 
 [+] bcrypt [Hashcat Mode: 3200]
-- running with 3200 and rockypuo file -->hashed$ hashcat -m 3200 '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu' rockyou.txt -o ratkaisu2
+- running with 3200 and rockyou file -->hashed$ hashcat -m 3200 '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu' rockyou.txt -o ratkaisu2
 - with rockyou i found find the solution--> $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu:12345
-- pure luck? some warnings while cracking -to update or use parallellization but it worked
+- pure luck? some warnings while cracking, but it worked
 
 ### g) Voluntary bonus: Where do you want to go today?
 - finding parameters for hash with hashid --> hashed$ hashid -m f2477a144dff4f216ab81f2ac3e3207d
@@ -137,6 +139,7 @@ Source; https://terokarvinen.com/2023/crack-file-password-with-john/
 - doesn't find the file packages E: Unable to locate package zlib-gst
 - trying to upgrade packages with sudo apt-upgrade
 - finding out is there actually different packages for zip--> $ sudo apt-get -y install zziplib-bin
+- maybe right or maybe not starting to clone again anywau
 - cloning john again and creating folders
 - some kind of success
   Configured for building John the Ripper jumbo:
