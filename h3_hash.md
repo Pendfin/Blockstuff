@@ -68,7 +68,7 @@ Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt
 -  And this will take some time with virtual machine..........
 -Exhausted ,Started: Tue Nov 12 17:46:19 2024,Stopped: Tue Nov 12 17:49:09 2024
 - no match, of course, the text was pretty good and not in the file rockyou.txt
-- so it's working, no file was createdcat
+- so it's working, no file was created
 
 ### d) Dictionary attack.
 Source: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
