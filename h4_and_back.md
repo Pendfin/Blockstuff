@@ -3,28 +3,28 @@ Source: https://terokarvinen.com/trust-to-blockchain/#homework
 
 ### x) Read and summerize
 Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://bitcoin.org/bitcoin.pdf)  chapters
-- 1 Introduction
+#### - 1 Introduction
  - traditional commerce in internert relies heavily on financial institutions
  - third parties always increase costs, because there is possibility to challenge transactions, one must create trust and therefore collect information about parties and certain amount of frauds exists
  - paper proposer digital financial transaction mechanism guaranteed with cryptographical hashes and peer-to-peer network to build it trustworthy
-- 2 Transactions
+#### - 2 Transactions
  - digital coin is a chain of signatures
  - owners (previous, recent and future) sign transactions with public keys
  - problem of double-spending is dealt with open and public chain of transactions where you can verify that the money isn't double spent
-- 3 Timestamp Server
+#### - 3 Timestamp Server
  - as solution is created chain of hashed time-stamps, which include always the previous hashes.
  - so the last chain consists of all the previous    
-- 4 Proof-of-Work
+#### - 4 Proof-of-Work
  - one block contains nonce created by proof-of-work
  - proof-of-work is consept of guarantee authenticity of block which contains hash and nonce
  - proof-of-work is price in form of CPU effort that makes it umprofitable to forge blocks
  - as proof-of-work is cpu effort, the longest chain of block is the one that is most valued (effort=value)
  - majority rules - those who have the most CPU power can rule the chain, but because CPU is widely spreaded there is not a one single authority or party to rule it
-- 5 Network
+#### - 5 Network
  - nodes are important actors in network - nodes have chain of transactions and ability to add new ones and creating nonse
  - longest chain available is the one that is always used
  - if other branches appear - those are cut down whenever new proof-of-work is created
-- 6 Incentive
+#### - 6 Incentive
  - cpu time and electricity are used assets when creating proof-of-work
  - creator of the block receives a new coin
  - transaction fee is a reward when creating the block - it is basically a fee when doing transactions ---> e.g. sending one coin (0.73 value received + 0.27 transaction fee)
@@ -67,8 +67,7 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 - recycle
 
 
-- ### e)
-- e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain.
+### e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain.
 -  Explain what each value and field means. You only need to analyze the block information and one sample transaction,
 -   as a block can contain many transactions. Voluntary bonus: Use a transaction that's interesting,
 -   such as one related to a crime or other unusual event.
@@ -93,6 +92,35 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 -   transaction fee
 -   transaction fee rate
 -   miner
-
+-   
+### f) rogecoin
+source: https://www.youtube.com/watch?v=GUs5y9leCyA
+- argument 1 - Digital money is easy to lose (20% forget their passwords).You can lose it also easily by scams or harddisc failure 
+ - probably yes, if you don't or cannot use software. Tracebility and coercive measures are not yet on the same level than with fiat money
+ - probably no, not more easier than fiat money what is scammed in fastening speed by phones and emails. And whatabout when your house burns and you forget to take the pillow with you....
+- argument 2 - It is not widely accepted
+ - probably yes, you can't use it everywhere
+- argument 3 - It collective hallucination
+ - probably yes and no , might be but so it is fiat money. The structures of fiat are older and practises established, but all the same: the value is what we think it is
+- argument 4 - It is Hype and full of complicated with technogiberish
+ - probably yes - definetely so but isn't all new things (AI?). It's more of feature of product. 
+- argument 5 - It is volatile and highly speculative
+ - probably yes - because it is not linked in any real asset it's value changes much.
+ - probably no - not more than stocks - if you think about what happened with memestocks the story isn't that different
+- argument 6 - Fiat currency is printed and backed by lizard people
+ -probably yes - definetely - V 
+- argument 7 - blockchain is based on needlesly complicated mathproblems
+ - probably yes - there might be other solutions for proof-of-work, but none of I know
+ - probably no - the proof-of-work is in the core to create trust and value in real peer-to-peer networks  
+- argument 8 - uses vast amounts of energy and accelerates climate change
+ - probably yes - not as much as some people argue, but rogecoin is not a necessity - we can all live without it. Like among lots of other things too......
+- argument 9 - value of rogecoin is based on assumption of goverments falling apart
+ - probably yes - in some circles maybe
+ - probably no - the value is purely speculative and it has nothing to do with chaos  
+- argument 10 - it is investment
+ - probably yes - of course, is good or a bad is another story. But like fiat, you don't get anything with you form here  
+- argument 11 - GPU's prices are rocketing
+ - probably yes - demand of CPU power has been increasing
+ - probably no - probably big datacenter supporting AI are increasing prices even more  
 
 
