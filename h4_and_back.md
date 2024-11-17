@@ -96,8 +96,8 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 ### f) rogecoin
 source: https://www.youtube.com/watch?v=GUs5y9leCyA
 - argument 1 - Digital money is easy to lose (20% forget their passwords).You can lose it also easily by scams or harddisc failure 
- - probably yes, if you don't or cannot use software. Tracebility and coercive measures are not yet on the same level than with fiat money
- - probably no, not more easier than fiat money what is scammed in fastening speed by phones and emails. And whatabout when your house burns and you forget to take the pillow with you....
+  - probably yes, if you don't or cannot use software. Tracebility and coercive measures are not yet on the same level than with fiat money
+  - probably no, not more easier than fiat money what is scammed in fastening speed by phones and emails. And whatabout when your house burns and you forget to take the pillow with you....
 - argument 2 - It is not widely accepted
  - probably yes, you can't use it everywhere
 - argument 3 - It collective hallucination
