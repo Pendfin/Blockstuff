@@ -64,23 +64,34 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 - I can see unconfirmed transactions - have try to change servers because electurm keeps falling offline from time to time
 
 ### d)
-- recycle
+- recycle- sending it back
+![image](https://github.com/user-attachments/assets/acb05b84-9173-4d1b-a92e-baf1f694a11d)
+![image](https://github.com/user-attachments/assets/4210f60c-2845-4582-89d9-5685e8b12820)
+- not easy to send when someones so little amounts and high transaction fees
+
 
 
 ### e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain.
 -  Explain what each value and field means. You only need to analyze the block information and one sample transaction,
 -   as a block can contain many transactions. Voluntary bonus: Use a transaction that's interesting,
 -   such as one related to a crime or other unusual event.
--   find out Explorer --> https://mempool.space/ (and actually this translates to finnish)
--   ![image](https://github.com/user-attachments/assets/58c6763e-40fd-4193-94c9-74046c493ca8)
--   I pick up real block-->Lohko / block 870556
+-   find out Explorer --> https://mempool.space/ (open source project)
+-   ![image](https://github.com/user-attachments/assets/4732c2b2-f289-426c-bbb6-874eed86bde3)
+
+-   I pick up real block--> / block 870556 (https://mempool.space/block/0000000000000000000283a2f61d78a519199af5ca359ef2f51e7915739c9a6c)
 -   hash 0000000000000000000283a2f61d78a519199af5ca359ef2f51e7915739c9a6c
--   time-stamp 
--   transactio
--   size
--   weight
--   state
--   transaction fee rate
+-   hash: fingerprint of the block
+-   time-stamp:time when block was created
+-   size: size of the block, the amount of data in the block
+-   weight: weight units - calculated sum of the size of the transactions in block. Differnet parts
+-   health: percentage, how many transactions where intentionally exxcluded from block. percentage of expected vs. actual block 
+-   transactions: amount of transactiosn in the block
+-   total fees
+-   miner: whi mined the block
+
+-   state:
+-
+-    transaction fee rate
 -   medium transaction fee
 -   sum of transaction fees
 -   cost
@@ -99,28 +110,28 @@ source: https://www.youtube.com/watch?v=GUs5y9leCyA
   - probably yes, if you don't or cannot use software. Tracebility and coercive measures are not yet on the same level than with fiat money
   - probably no, not more easier than fiat money what is scammed in fastening speed by phones and emails. And whatabout when your house burns and you forget to take the pillow with you....
 - argument 2 - It is not widely accepted
- - probably yes, you can't use it everywhere
+  - probably yes, you can't use it everywhere
 - argument 3 - It collective hallucination
- - probably yes and no , might be but so it is fiat money. The structures of fiat are older and practises established, but all the same: the value is what we think it is
+  - probably yes and no , might be but so it is fiat money. The structures of fiat are older and practises established, but all the same: the value is what we think it is
 - argument 4 - It is Hype and full of complicated with technogiberish
- - probably yes - definetely so but isn't all new things (AI?). It's more of feature of product. 
+  - probably yes - definetely so but isn't all new things (AI?). It's more of feature of product. 
 - argument 5 - It is volatile and highly speculative
- - probably yes - because it is not linked in any real asset it's value changes much.
- - probably no - not more than stocks - if you think about what happened with memestocks the story isn't that different
+  - probably yes - because it is not linked in any real asset it's value changes much.
+  - probably no - not more than stocks - if you think about what happened with memestocks the story isn't that different
 - argument 6 - Fiat currency is printed and backed by lizard people
- -probably yes - definetely - V 
+  - probably yes - definetely - V 
 - argument 7 - blockchain is based on needlesly complicated mathproblems
- - probably yes - there might be other solutions for proof-of-work, but none of I know
- - probably no - the proof-of-work is in the core to create trust and value in real peer-to-peer networks  
+  - probably yes - there might be other solutions for proof-of-work, but none of I know
+  - probably no - the proof-of-work is in the core to create trust and value in real peer-to-peer networks  
 - argument 8 - uses vast amounts of energy and accelerates climate change
- - probably yes - not as much as some people argue, but rogecoin is not a necessity - we can all live without it. Like among lots of other things too......
+  - probably yes - not as much as some people argue, but rogecoin is not a necessity - we can all live without it. Like among lots of other things too......
 - argument 9 - value of rogecoin is based on assumption of goverments falling apart
- - probably yes - in some circles maybe
- - probably no - the value is purely speculative and it has nothing to do with chaos  
+  - probably yes - in some circles maybe
+  - probably no - the value is purely speculative and it has nothing to do with chaos  
 - argument 10 - it is investment
- - probably yes - of course, is good or a bad is another story. But like fiat, you don't get anything with you form here  
+  - probably yes - of course, is good or a bad is another story. But like fiat, you don't get anything with you form here  
 - argument 11 - GPU's prices are rocketing
- - probably yes - demand of CPU power has been increasing
- - probably no - probably big datacenter supporting AI are increasing prices even more  
+  - probably yes - demand of CPU power has been increasing
+  - probably no - probably big datacenter supporting AI are increasing prices even more  
 
 
