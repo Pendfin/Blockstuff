@@ -1,22 +1,42 @@
-##To the moon and back
+## To the moon and back
 Source: https://terokarvinen.com/trust-to-blockchain/#homework
 
-###x) Read and summerize
+### x) Read and summerize
 Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://bitcoin.org/bitcoin.pdf)  chapters
-1 Introduction
-2 Transactions
-3 Timestamp Server
-4 Proof-of-Work
-5 Network
-6 Incentive
+- 1 Introduction
+ - traditional commerce in internert relies heavily on financial institutions
+ - third parties always increase costs, because there is possibility to challenge transactions, one must create trust and therefore collect information about parties and certain amount of frauds exists
+ - paper proposer digital financial transaction mechanism guaranteed with cryptographical hashes and peer-to-peer network to build it trustworthy
+- 2 Transactions
+ - digital coin is a chain of signatures
+ - owners (previous, recent and future) sign transactions with public keys
+ - problem of double-spending is dealt with open and public chain of transactions where you can verify that the money isn't double spent
+- 3 Timestamp Server
+ - as solution is created chain of hashed time-stamps, which include always the previous hashes.
+ - so the last chain consists of all the previous    
+- 4 Proof-of-Work
+ - one block contains nonce created by proof-of-work
+ - proof-of-work is consept of guarantee authenticity of block which contains hash and nonce
+ - proof-of-work is price in form of CPU effort that makes it umprofitable to forge blocks
+ - as proof-of-work is cpu effort, the longest chain of block is the one that is most valued (effort=value)
+ - majority rules - those who have the most CPU power can rule the chain, but because CPU is widely spreaded there is not a one single authority or party to rule it
+- 5 Network
+ - nodes are important actors in network - nodes have chain of transactions and ability to add new ones and creating nonse
+ - longest chain available is the one that is always used
+ - if other branches appear - those are cut down whenever new proof-of-work is created
+- 6 Incentive
+ - cpu time and electricity are used assets when creating proof-of-work
+ - creator of the block receives a new coin
+ - transaction fee is a reward when creating the block - it is basically a fee when doing transactions ---> e.g. sending one coin (0.73 value received + 0.27 transaction fee)
+ - system is build to support trustworthiness by it being cheaper to be honest than a crook.
 
-###a) Creating the wallet
+### a) Creating the wallet
  - Using againg my virtual machine Debian (ehiich was set up in homework 1 (https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md)
  - updating packkages -->sudo apt-get update
  - installing electrum --> sudoapt-get install electrum --> success no error messages 
  - running it --> electrum --testnet
  - Setting it up: automated server connection, new standard wallet, putting seed  and password in safe place, encrypt the wallet also
-###b) trying to get some money
+### b) trying to get some money
 -  faucets to be tested
   - today out of order (https://coinfaucet.eu/en/btc-testnet/)
   - seems to be up and running https://bitcoinfaucet.uo1.net/send.php - 
