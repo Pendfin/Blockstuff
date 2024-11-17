@@ -13,10 +13,12 @@ Source: https://terokarvinen.com/trust-to-blockchain/#homework
 - following faucets to be tested
   - today out of order (https://coinfaucet.eu/en/btc-testnet/)
   - seems to be up and running https://bitcoinfaucet.uo1.net/send.php
+  - Up and running https://tbtc.bitaps.com/tools and also https://faucet.triangleplatform.com/bitcoin/testnet
       
 - Get an address from my wallet ( and yes it is online)--> error wrong volume (don't understand what this means?)
 - next faucet: https://faucet.triangleplatform.com/bitcoin/testn- Error: Expected property "1" of type Satoshi, got Number -146625
-- my address is correct - if I cahnge it has different kinf of error message
+- my address is correct - if I change it has different kinf of error message
+- Test the other site (https://tbtc.bitaps.com/tools)-------diffent kind of messages - not defined
 - Check some videos how to solve the problem - total frustration - zero info -should be simple as .....
 - taken different approach and actually installing windows wallet for laptop. Wallet called sparrow -->https://sparrowwallet.com/download/ (mainly because i found videos for idiots about using it [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
 - After setting it up (just testnet3 version of it) try to receive again
@@ -25,10 +27,11 @@ Source: https://terokarvinen.com/trust-to-blockchain/#homework
 - testing again with linux electrum ---- suprpise it worked, i changed the server before trying it again.
 - seems like the only faucet working is https://bitcoinfaucet.uo1.net/send.php
 - now i have two wallets in two different environments
-c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
+- c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
 - trying to send it fro my sparrow wallet to electrum wallet
 - ![image](https://github.com/user-attachments/assets/af32ccc0-fd69-43f8-aa08-4377d43259cb)
 - Pending transaction 'Pay 730 sats to tb1qe9xm3yjx85et64x9ugs6tyewcmhemp7tg9vr32' - pay high fee for transaction
+- still waiting while going to have dinner
 
 
 
