@@ -4,13 +4,13 @@ Source: https://terokarvinen.com/trust-to-blockchain/#homework
 ###x)
 
 ###a) Creating the wallet
- - Using againg my virtual machine Debian
- - updating packkages sudo apt-get update
- - installing electrum
+ - Using againg my virtual machine Debian (ehiich was set up in homework 1 (https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md)
+ - updating packkages -->sudo apt-get update
+ - installing electrum --> sudo
  - running it
  - Setting it up: automated server connection, new standard wallet, putting seed  and password in safe place, encrypt the wallet also
 ###b) trying to get some money
-- following faucets to be tested
+-  faucets to be tested
   - today out of order (https://coinfaucet.eu/en/btc-testnet/)
   - seems to be up and running https://bitcoinfaucet.uo1.net/send.php
   - Up and running https://tbtc.bitaps.com/tools and also https://faucet.triangleplatform.com/bitcoin/testnet
