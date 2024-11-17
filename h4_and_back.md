@@ -1,38 +1,50 @@
 ##To the moon and back
 Source: https://terokarvinen.com/trust-to-blockchain/#homework
 
-###x)
+###x) Read and summerize
+Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://bitcoin.org/bitcoin.pdf)  chapters
+1 Introduction
+2 Transactions
+3 Timestamp Server
+4 Proof-of-Work
+5 Network
+6 Incentive
 
 ###a) Creating the wallet
  - Using againg my virtual machine Debian (ehiich was set up in homework 1 (https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md)
  - updating packkages -->sudo apt-get update
- - installing electrum --> sudo
- - running it
+ - installing electrum --> sudoapt-get install electrum --> success no error messages 
+ - running it --> electrum --testnet
  - Setting it up: automated server connection, new standard wallet, putting seed  and password in safe place, encrypt the wallet also
 ###b) trying to get some money
 -  faucets to be tested
   - today out of order (https://coinfaucet.eu/en/btc-testnet/)
-  - seems to be up and running https://bitcoinfaucet.uo1.net/send.php
-  - Up and running https://tbtc.bitaps.com/tools and also https://faucet.triangleplatform.com/bitcoin/testnet
-      
-- Get an address from my wallet ( and yes it is online)--> error wrong volume (don't understand what this means?)
-- next faucet: https://faucet.triangleplatform.com/bitcoin/testn- Error: Expected property "1" of type Satoshi, got Number -146625
+  - seems to be up and running https://bitcoinfaucet.uo1.net/send.php - 
+  - Up and running https://tbtc.bitaps.com/tools and also https://faucet.triangleplatform.com/bitcoin/testnet    
+- Get an address from my wallet ( and yes it is online)--> error wrong volume --https://bitcoinfaucet.uo1.net/send.php (don't understand what this means?)
+- next faucet: https://faucet.triangleplatform.com/bitcoin/testn- Error: Expected property "1" of type Satoshi, got Number -146625 (and after multiple tries the niumber changes)
 - my address is correct - if I change it has different kinf of error message
 - Test the other site (https://tbtc.bitaps.com/tools)-------diffent kind of messages - not defined
 - Check some videos how to solve the problem - total frustration - zero info -should be simple as .....
-- taken different approach and actually installing windows wallet for laptop. Wallet called sparrow -->https://sparrowwallet.com/download/ (mainly because i found videos for idiots about using it [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
+- taken different approach and actually installing windows app and create new wallet for laptop. Wallet-app called sparrow -->https://sparrowwallet.com/download/ (mainly because i found videos for idiots how to useit [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
 - After setting it up (just testnet3 version of it) try to receive again
-- Same errors ---- checking server status and after testing connections it started to work
+- Same errors ---- checking server status and after testing connections--> manage to acquire some testcoins
 - but for a other faucet - same errors
-- testing again with linux electrum ---- suprpise it worked, i changed the server before trying it again.
+- testing again with my debian and electrum ---- suprpise it worked, i changed the server before trying it again.
 - seems like the only faucet working is https://bitcoinfaucet.uo1.net/send.php
 - now i have two wallets in two different environments
-- c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
+- note: later those didn't work, but day after https://coinfaucet.eu/en/btc-testnet/ worked again for sprrow 
+### c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
 - trying to send it fro my sparrow wallet to electrum wallet
 - ![image](https://github.com/user-attachments/assets/af32ccc0-fd69-43f8-aa08-4377d43259cb)
 - Pending transaction 'Pay 730 sats to tb1qe9xm3yjx85et64x9ugs6tyewcmhemp7tg9vr32' - pay high fee for transaction
 - still waiting while going to have dinner
+- next day checking the wallets
+- ![image](https://github.com/user-attachments/assets/69d96a27-bd34-44ff-937a-361f784ab7ba)
+- I can see unconfirmed transactions - have try to change servers because electurm keeps falling offline from time to time
 
+### d)
+- recycle
 
 
 - ### e)
