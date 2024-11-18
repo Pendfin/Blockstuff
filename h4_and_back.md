@@ -73,6 +73,7 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 
 ### e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain.
 -  Explain what each value and field means. You only need to analyze the block information and one sample transaction,
+-  source : copilot Edge
 -   as a block can contain many transactions. Voluntary bonus: Use a transaction that's interesting,
 -   such as one related to a crime or other unusual event.
 -   find out Explorer --> https://mempool.space/ (open source project)
@@ -85,25 +86,37 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 -   size: size of the block, the amount of data in the block
 -   weight: weight units - calculated sum of the size of the transactions in block. Differnet parts
 -   health: percentage, how many transactions where intentionally exxcluded from block. percentage of expected vs. actual block 
--   transactions: amount of transactiosn in the block
--   total fees
--   miner: whi mined the block
+-   transactions: amount of transactions in the block
+-   total fees: the amount of fees in one block
+-   Subsidy + fees: teh reward of mining and fees summed together
+-   miner: who mined the block
+-   Version: 4-byte version number of the block. Ensures that correct version of system is used
+-   Bits: target treshold difficulty for proof-of-work. Nonce must lower than bits. Adjsuted every two weeks or 2016 blocks.
+-   Merkle root:cryptographic summary of all the transactiosn in the block. It diluded version of all the transactions in the block to make sure you don't need download the whole block.
+-   Diffculty: measure of difficulty, higher the number it is harder to find the rigth hash for the block
+-   Nonce: the value used to create hash(which shoud meet targeted difficulty) with the block header
+-   Block header hex: includes version, pervious block hash, merkle root, timestamp, bits and nonce and these turned into hexadecimal format
+  - block in hand has header: 0060aa2175100983136dd7ec7c7f889db3db90287478f79079150000000000000000000053ebe5b1a59da0c3f5c357d42eb973ac6b4f0b485820acdb142b7999963c9227247f3867e4c402171021b4c3    
 
--   state:
--
--    transaction fee rate
--   medium transaction fee
--   sum of transaction fees
--   cost
--   miner
--   one transaction (random) 4066334cdd3e818a011d257e1f79d04b9e66a345e0c00f0770aeda859ab8eadf
--   timestamp
--   properties
--   check
--   transaction fee
--   transaction fee rate
--   miner
--   
+-   Transactions properties
+-   ![image](https://github.com/user-attachments/assets/92cb5b3a-67ce-4623-9b55-f9de85f4da7f)
+-   ![image](https://github.com/user-attachments/assets/6d4048f5-b6ad-4f1e-9322-f92059dc2aa2)
+
+
+-   Timestamp: timestamp of the transaction 
+-   transaction fee rate: fees divided by the size--> in this case this was overpaids so for some reasenon
+-   transaction fee: transactions transaction cost
+-   Confirmed: the state of transaction
+-   Size: size of transaction in bytes
+-   Virtual size (vsize): adjusted size of of the transactions
+-   Adjusted vsize: calculated to balance the difference of impact on constraints of bitcoin blocks, the weight limit and sigop limit.
+-   Wight: the size of transaction in weight units
+-   Version: version of transaction
+-   Locktime: treshold to include transaction in to block. Can be used to delay payments if necessary  
+-   Sigops: signature operations is cryptographic operations ensure signing of the transaction
+-   Transaction hex:hexadecimal of transaction, a compact way to present transaction data
+-   one transaction (random) c3834cfd77dd15d598f41bad105a2b32f0b22b4bde0c8ef751ad3dad35cebf13
+-   Bonus task: what is interesting transaction? You can't know. The reason it is used (as said in the Rogevcoin video) to buy heroine it is its untraceability. So you can't know unless you find out whose the wallet is
 ### f) rogecoin
 source: https://www.youtube.com/watch?v=GUs5y9leCyA
 - argument 1 - Digital money is easy to lose (20% forget their passwords).You can lose it also easily by scams or harddisc failure 
