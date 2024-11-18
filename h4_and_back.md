@@ -36,6 +36,7 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
  - installing electrum --> sudoapt-get install electrum --> success no error messages 
  - running it --> electrum --testnet
  - Setting it up: automated server connection, new standard wallet, putting seed  and password in safe place, encrypt the wallet also
+
 ### b) trying to get some money
 -  faucets to be tested
   - today out of order (https://coinfaucet.eu/en/btc-testnet/)
@@ -54,6 +55,7 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 - seems like the only faucet working is https://bitcoinfaucet.uo1.net/send.php
 - now i have two wallets in two different environments
 - note: later those didn't work, but day after https://coinfaucet.eu/en/btc-testnet/ worked again for sprrow 
+
 ### c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
 - trying to send it fro my sparrow wallet to electrum wallet
 - ![image](https://github.com/user-attachments/assets/af32ccc0-fd69-43f8-aa08-4377d43259cb)
@@ -76,7 +78,7 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 
 ### e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain.
 -  Explain what each value and field means. You only need to analyze the block information and one sample transaction,
--  source : copilot Edge
+-  source : copilot Edge - all the fields explanation from there
 -   as a block can contain many transactions. Voluntary bonus: Use a transaction that's interesting,
 -   such as one related to a crime or other unusual event.
 -   find out Explorer --> https://mempool.space/ (open source project)
@@ -122,32 +124,32 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 -   Bonus task: what is interesting transaction? You can't know. The reason it is used (as said in the Rogevcoin video) to buy heroine it is its untraceability. So you can't know unless you find out whose the wallet is
 ### f) rogecoin
 source: https://www.youtube.com/watch?v=GUs5y9leCyA
-- argument 1 - Digital money is easy to lose (20% forget their passwords).You can lose it also easily by scams or harddisc failure 
+- **argument 1** - Digital money is easy to lose (20% forget their passwords).You can lose it also easily by scams or harddisc failure 
   - probably yes, if you don't or cannot use software. Tracebility and coercive measures are not yet on the same level than with fiat money
   - probably no, not more easier than fiat money what is scammed in fastening speed by phones and emails. And whatabout when your house burns and you forget to take the pillow with you....
-- argument 2 - It is not widely accepted
+- **argument 2** - It is not widely accepted
   - probably yes, you can't use it everywhere
-- argument 3 - It collective hallucination
+- **argument 3** - It collective hallucination
   - probably yes and no , might be but so it is fiat money. The structures of fiat are older and practises established, but all the same: the value is what we think it is
-- argument 4 - It is Hype and full of complicated with technogiberish
+- **argument 4** - It is Hype and full of complicated with technogiberish
   - probably yes - definetely so but isn't all new things (AI?). It's more of feature of product. 
-- argument 5 - It is volatile and highly speculative
+- **argument 5** - It is volatile and highly speculative
   - probably yes - because it is not linked in any real asset it's value changes much.
   - probably no - not more than stocks - if you think about what happened with memestocks the story isn't that different
-- argument 6 - Fiat currency is printed and backed by lizard people
+- **argument 6** - Fiat currency is printed and backed by lizard people
   - probably yes - definetely - V 
-- argument 7 - blockchain is based on needlesly complicated mathproblems
+- **argument 7** - blockchain is based on needlesly complicated mathproblems
   - probably yes - there might be other solutions for proof-of-work, but none of I know
   - probably no - the proof-of-work is in the core to create trust and value in real peer-to-peer networks  
-- argument 8 - uses vast amounts of energy and accelerates climate change
+- **argument 8** - uses vast amounts of energy and accelerates climate change
   - probably yes - not as much as some people argue, but rogecoin is not a necessity - we can all live without it. Like among lots of other things too......
-- argument 9 - value of rogecoin is based on assumption of goverments falling apart
+- **argument 9** - value of rogecoin is based on assumption of goverments falling apart
   - probably yes - in some circles maybe
   - probably no - the value is purely speculative and it has nothing to do with chaos  
-- argument 10 - it is investment
+- **argument 10** - it is investment
   - probably yes - of course, is good or a bad is another story. But like fiat, you don't get anything with you form here  
-- argument 11 - GPU's prices are rocketing
+- **argument 11** - GPU's prices are rocketing
   - probably yes - demand of CPU power has been increasing
-  - probably no - probably big datacenter supporting AI are increasing prices even more  
+  - probably no - probably big datacenters with AI hardwarew are increasing prices even more  
 
 
