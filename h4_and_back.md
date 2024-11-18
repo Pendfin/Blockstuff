@@ -46,7 +46,7 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 - my address is correct - if I change it has different kinf of error message
 - Test the other site (https://tbtc.bitaps.com/tools)-------diffent kind of messages - not defined
 - Check some videos how to solve the problem - total frustration - zero info -should be simple as .....
-- taken different approach and actually installing windows app and create new wallet for laptop. Wallet-app called sparrow -->https://sparrowwallet.com/download/ (mainly because i found videos for idiots how to useit [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
+- taken different approach and actually installing windows app and create new wallet for laptop. Wallet-app called Sparrow -->https://sparrowwallet.com/download/ (mainly because i found videos for idiots how to useit [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
 - After setting it up (just testnet3 version of it) try to receive again
 - Same errors ---- checking server status and after testing connections--> manage to acquire some testcoins
 - but for a other faucet - same errors
@@ -64,10 +64,13 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 - I can see unconfirmed transactions - have try to change servers because electurm keeps falling offline from time to time
 
 ### d)
-- recycle- sending it back
+- recycle- sending it back to hte faucet I got it
 ![image](https://github.com/user-attachments/assets/acb05b84-9173-4d1b-a92e-baf1f694a11d)
 ![image](https://github.com/user-attachments/assets/4210f60c-2845-4582-89d9-5685e8b12820)
-- not easy to send when someones so little amounts and high transaction fees
+- not easy to send when having so little amounts and high transaction fees
+- the day after transaction are confirmed and sending the rest
+- ![image](https://github.com/user-attachments/assets/4b402d59-820a-4618-8d25-bd3fc256b9f1)
+
 
 
 
