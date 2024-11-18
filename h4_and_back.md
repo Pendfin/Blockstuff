@@ -31,30 +31,30 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
  - system is build to support trustworthiness by it being cheaper to be honest than a crook.
 
 ### a) Creating the wallet
- - Using againg my virtual machine Debian (ehiich was set up in homework 1 (https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md)
+ - Using againg my virtual machine Debian (wich was set up in homework 1)(https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md)
  - updating packkages -->sudo apt-get update
  - installing electrum --> sudoapt-get install electrum --> success no error messages 
  - running it --> electrum --testnet
- - Setting it up: automated server connection, new standard wallet, putting seed  and password in safe place, encrypt the wallet also
+ - Setting it up: automated server connection, new standard wallet, putting seed  and password in safe place, encrypt the wallet also--> ready to be rich
 
 ### b) trying to get some money
 -  faucets to be tested
   - today out of order (https://coinfaucet.eu/en/btc-testnet/)
-  - seems to be up and running https://bitcoinfaucet.uo1.net/send.php - 
+  - this seems to be up and running https://bitcoinfaucet.uo1.net/send.php - 
   - Up and running https://tbtc.bitaps.com/tools and also https://faucet.triangleplatform.com/bitcoin/testnet    
-- Get an address from my wallet ( and yes it is online)--> error wrong volume --https://bitcoinfaucet.uo1.net/send.php (don't understand what this means?)
+- Get an address from my wallet (and yes it is online)--> error wrong volume --https://bitcoinfaucet.uo1.net/send.php (actually i don't understand what this means?)
 - next faucet: https://faucet.triangleplatform.com/bitcoin/testn- Error: Expected property "1" of type Satoshi, got Number -146625 (and after multiple tries the niumber changes)
 - my address is correct - if I change it has different kinf of error message
-- Test the other site (https://tbtc.bitaps.com/tools)-------diffent kind of messages - not defined
-- Check some videos how to solve the problem - total frustration - zero info -should be simple as .....
-- taken different approach and actually installing windows app and create new wallet for laptop. Wallet-app called Sparrow -->https://sparrowwallet.com/download/ (mainly because i found videos for idiots how to useit [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
+- Test the other site (https://tbtc.bitaps.com/tools)-------different kind of messages - not defined
+- Check some videos how to solve the problem - total frustration - zero info - should be simple as .....
+- take different approach and actually installing windows app and create new wallet for laptop. Wallet-app called Sparrow --> https://sparrowwallet.com/download/ (mainly because i found videos for idiots how to use it [https://www.google.com/search?q=idiots+guide+to+set+up+testnet+bitcon+wallet&oq=idiots+guide+to+set+up+testnet+bitcon+wallet&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEJMjE5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d6be2b75,vid:7JJkLW4SHKQ,st:56](https://youtu.be/7JJkLW4SHKQ))
 - After setting it up (just testnet3 version of it) try to receive again
-- Same errors ---- checking server status and after testing connections--> manage to acquire some testcoins
-- but for a other faucet - same errors
+- Same errors ---- checking server status and after testing connections--> manage to acquire some testcoins from https://bitcoinfaucet.uo1.net/send.php
+- but for a other faucets - same errors
 - testing again with my debian and electrum ---- suprpise it worked, i changed the server before trying it again.
 - seems like the only faucet working is https://bitcoinfaucet.uo1.net/send.php
 - now i have two wallets in two different environments
-- note: later those didn't work, but day after https://coinfaucet.eu/en/btc-testnet/ worked again for sprrow 
+- note: later those didn't work, but day after https://coinfaucet.eu/en/btc-testnet/ worked again for sparrow 
 
 ### c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
 - trying to send it fro my sparrow wallet to electrum wallet
@@ -70,17 +70,13 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 ![image](https://github.com/user-attachments/assets/acb05b84-9173-4d1b-a92e-baf1f694a11d)
 ![image](https://github.com/user-attachments/assets/4210f60c-2845-4582-89d9-5685e8b12820)
 - not easy to send when having so little amounts and high transaction fees
-- the day after transaction are confirmed and sending the rest
+- the day after transactions are confirmed and sending the rest back to home
 - ![image](https://github.com/user-attachments/assets/4b402d59-820a-4618-8d25-bd3fc256b9f1)
-
-
-
 
 ### e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain.
 -  Explain what each value and field means. You only need to analyze the block information and one sample transaction,
--  source : copilot Edge - all the fields explanation from there
--   as a block can contain many transactions. Voluntary bonus: Use a transaction that's interesting,
--   such as one related to a crime or other unusual event.
+-   as a block can contain many transactions. Voluntary bonus: Use a transaction that's interesting,such as one related to a crime or other unusual event.
+-    source : copilot Edge - all the fields explanation from there
 -   find out Explorer --> https://mempool.space/ (open source project)
 -   ![image](https://github.com/user-attachments/assets/4732c2b2-f289-426c-bbb6-874eed86bde3)
 
@@ -122,8 +118,10 @@ Source: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (https://b
 -   Transaction hex:hexadecimal of transaction, a compact way to present transaction data
 -   one transaction (random) c3834cfd77dd15d598f41bad105a2b32f0b22b4bde0c8ef751ad3dad35cebf13
 -   Bonus task: what is interesting transaction? You can't know. The reason it is used (as said in the Rogevcoin video) to buy heroine it is its untraceability. So you can't know unless you find out whose the wallet is
+
 ### f) rogecoin
 source: https://www.youtube.com/watch?v=GUs5y9leCyA
+- #### Is this true?
 - **argument 1** - Digital money is easy to lose (20% forget their passwords).You can lose it also easily by scams or harddisc failure 
   - probably yes, if you don't or cannot use software. Tracebility and coercive measures are not yet on the same level than with fiat money
   - probably no, not more easier than fiat money what is scammed in fastening speed by phones and emails. And whatabout when your house burns and you forget to take the pillow with you....
