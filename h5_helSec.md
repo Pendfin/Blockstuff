@@ -16,6 +16,12 @@ Some questions were addressed to Jos. Some regarded responsible party to overwat
 
 
 ### State of Union by Heikki ”zokol” Juva
+RED is Radio Equipoment Directive. It is about requirements for radio equipment like baby monitors, earphones etc.
+
+CRA replaces RED
+
+
+https://github.com/Zokol/RED-CRA/blob/main/RED%20evaluation.png
 
 
 ### My experiences on Defender External Attack Surface Management by Joona "Rinorragi" Immonen
