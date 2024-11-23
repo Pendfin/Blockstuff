@@ -1,5 +1,5 @@
 ## Helsec 21.11. public meetings presentations overviews
-Source of this recap is livestream of the event 21.11.2024 @[helsec](https://helsec.fi/events/2024-11-21_helsec_november_2024_meetup/)
+Source of this recap is livestream of the event 21.11.2024 @[helsec](https://helsec.fi/events/2024-11-21_helsec_november_2024_meetup/) and https://terokarvinen.com/trust-to-blockchain/#homework
 This recap is created with help of  Microsoft Copilot. It is used to help with abreviations and terminology.
 
 ### Industrial Cyber Security by Jos Helmich
@@ -22,7 +22,6 @@ Source: https://github.com/Zokol/RED-CRA/blob/main/RED%20evaluation.png - this i
 Heikki's presentation was about Eurepean Union regulation, mainly RED (Radio Equipoment Directive) and CRA (Cyber Resilience Act). In previous recap is explained differences of directice and act. And also what is CRA. Presentation included also practical aproach towards how regulation is addressed or taken account in manufacturing of equipments that are objects of regulation.
 RED is Radio Equipoment Directive. It is about requirements for radio equipment like baby monitors, earphones etc. In this digital era almost all the devices can be plugged into network. Being so, those should be compliant to RED. In the future CRA is replacing RED as being more coercive. But at the moment RED is enforced and CRA is in 'to-be' state. It is assumed that CRA will be enforced 2027 and lessons learned from RED will be part of it.
 
-
 RED has also device classification in three layers. First on being connected devices, personal data (like video) using device  and financial data using devices. These layers have different kind of requirements which should addressed in documentation. Especially in terms & conditions part of it.
 
 RED has 'good' and 'problematic' requirements. Good ones are requirements to coordinate vulnerabilities between manufacturers and report vulnerabilities, it also enforces input validation, addresses used cryptrography, password practises and for some parts content filtering. The problematic ones are compatibility which allows less secure solutions when compability is required to older versions, security solutions ourtsourcing to vendors or subcontractors meaning that solution can have external device that takes care of security and last one is that only documentation is used for evaluation of the product. And the documentation is delivered by manufacturer. 
@@ -32,16 +31,25 @@ The device was practically torn to pieces and its flash memory hacked. Some of t
 
 Overall statistics about the top-ten consumer devices had though pretty good statistics. Most of the devices were using TLS and CERT-pinning (network security), most of them don't have operating systems (this is two-bladed sword), most of them are wifi-connected but don't be onlinen all the time, which narrows probabilities to be hacked. Most common issues were that data is not removed, 3rd party access to ypour information and complex manufacturing/supply-chains. Last one meaning that product is usually piled up form pieces of electronics, software and plastics which can all be outsourced to someone in somewhere.
 
-Some questions were addressed again
+Some questions were addressed again e.g does this mean that  Tietoturvamerkki will be more widely used? Tietoturvamerkki is a guarantee that product is cybersecurity compliant issued by authorities in Finland. Nobody knows will there be govermental certificates. And personally i hope not. If goverment is issuer it will lead us to all sorts of discussion about does it falsify markets and is it the most efficient way to spent taxes. There was also a familier voice asking about man-in-the-middle attacks and especially attacks using perhaps used devices to intercept communication. Also question about flash-drives encryption level was presented. Basically no encryption is standard though secure boot is in use in most of the devices tested.
 
-Crossfire between markets, business, trust and security. If only done in paper, but auditors power and costs
+My own thoughts were between surprise and sadness. Suprise because in positive way it is not everyday and everyones job to hack these devices, it needs skills and access physically to device in most of the cases. Surpised negatively that in many cases customers who acquire these devices are totally unaware of the risk or flaws. Sadness because nobody cares and attitude is somewhere between Who-cares? and Take-the-money-and-run.
+
+Othe path of thoughts with these two presentations is battlefield of market and authorities, customers and citizens sitting in the crossfire and nowhere to duck. More regulations to protect which feels comforting until it makes your life complicated and it feels patronizing. And it is always my own responsibility to buy cheapest and fishiest products
 
 RED: https://single-market-economy.ec.europa.eu/sectors/electrical-and-electronic-engineering-industries-eei/radio-equipment-directive-red_en
 
 
-
 ### My experiences on Defender External Attack Surface Management by Joona "Rinorragi" Immonen
+The comedy act of how to use Microsoft EASM and comparison of benefits against other separate tools.
+Defender EASM is tool in Microsoft defender family, even though it is not a part of Microsoft zero trust capabilities
 
+C-level tool
+Annoying
+
+Billing is dubious
+
+Comparison
 
 ### Overall thoughts about the event and topic:
 The event it self seemed to be organized pretty well, though presentations were not available and stream was just video of the stage. Some voice problems from time to time.
