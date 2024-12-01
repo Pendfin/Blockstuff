@@ -146,10 +146,26 @@ gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torp
   ## c)Onion. In your own words, how does anonymity work in TOR?
 Reference:
 - Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
-- Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
-- so the anonymite is based on layers that don't have access through other layers, the entry node doesn't provide my identity to middle node and middle not to exit node
-- encryption used in these layers
+- Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
+- Li, N. (2010). Research on Diffie-Hellman key exchange protocol. https://doi.org/10.1109/ICCET.2010.5485276
+- so the anonymity is based on layers that don't have access through other layers, the entry node doesn't provide my identity to middle node and middle not to exit node
+- encryption used in these layers-->is made layer by layer, meaning it uses Diffie–Hellman handshake (which is explained in simple way and illiustrated [here]([url](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange))).
+  - but basically it means that parties agree about parameters that are used to create public keys from their own private keys sharing results with each other and  combining the received public keys  with their own private keys they share keys that can be used to secure communication between them (as long as secrets are safe)
+  - actual relays are fixed size and header and paylouad encrypted with 128-bit counter mode Advanced Encryption Standard (AES-CTR), with symmetric keys meaning that those are one time used and not known outside the nodes
+  - when hopping out of the onion the traffic is not anymore encrypted if not additional means are used
+
 ## d)What kind of the threat models could TOR fit?  
 Reference:
 - Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
 - Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
+- https://owasp.org/www-project-threat-model/
+- https://github.com/Attacks-on-Tor/Attacks-on-Tor
+- https://css.csail.mit.edu/6.858/2023/readings/tor-traffic-analysis.pdf
+- https://onionservices.torproject.org/apps/web/oniongroove/threat/
+- threat models that might apply to TOR or more precisely where it could be helpful with?
+- 
+  - basic feature of TOR is anonymity and the information is not easily available in the network
+  - it is not more secure or less secure than public internet
+  - if communication is or tarffic is needed to keep hidden like in espionage or ......
+ 
+## 
