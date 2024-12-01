@@ -1,6 +1,6 @@
 ## Tasks and guidence in https://terokarvinen.com/trust-to-blockchain/#homework
 
-## x)
+## x) Read and summarize
 ###  Tor: The second-generation onion router By Dingledine, Mathewson and Syverson 2004:. In USENIX security symposium 
 
 Refenence:Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
@@ -20,7 +20,7 @@ Chapter:3 Design goals and assumptions
   - adversary could mainly threaten the reliability and trust against network and lure users to more vulnearable environments to easiers to prey
 
 
-### x)  De-anonymisation attacks on tor: A survey. By Karunanayake, Ahmed, Malaney, Islam and Jha 2021 In IEEE Communications Surveys & Tutorials 
+### De-anonymisation attacks on tor: A survey. By Karunanayake, Ahmed, Malaney, Islam and Jha 2021 In IEEE Communications Surveys & Tutorials 
 Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615.
 Chapters:
 - Abstract
@@ -62,8 +62,18 @@ Reference: Halonen, Ollikainen, Rajala 2023: PhishSticks - The Ethical Hackers t
  as a result password is lost, money is lost, freedom is lost
 
 
-## a Install Tor browser and acces Tor network
+## a)  Install Tor browser and acces Tor network
 Reference: https://www.torproject.org/download/ and 
+- Doing this on Virtual Machine (Debian GNU/Linux 12/64-bit, Xfce version 4.18) running in Oracle virtual toolbox. And this running in Windows environment (https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md )
+- First go to the TOR-project web page and download it
+- 
 
 
-  
+## c)Onion. In your own words, how does anonymity work in TOR?
+Reference:
+- Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
+- Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
+## d)What kind of the threat models could TOR fit?  
+Reference:
+- Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
+- Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
