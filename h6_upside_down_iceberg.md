@@ -135,23 +135,22 @@ gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torp
 - but it smells fishy, only one post
 - almost all the links end up "onion site not found"
 -  ![image](https://github.com/user-attachments/assets/47af263a-a868-4b42-887f-79e242b5e37b)
-  
+- there are also private forums like or they are scams
+  - ![image](https://github.com/user-attachments/assets/35f038c8-27f0-43bb-ace9-67dbbb3ac6b0)
+  - ![image](https://github.com/user-attachments/assets/bdd134d5-794e-46cc-be5f-7426b30d8598)
+- many forums are more like marketplaces, but you can use Reddit   
 ### well known organisation
 - amnesty international as was earlier mentioned but also CIA
   - ![image](https://github.com/user-attachments/assets/317d5696-4983-4af9-bcb4-62ada15f338d)
   
 - all together it seems that ahmia search engine fetches better sites that are actually online
  
-  
- 
-  
-
-
-
-## c)Onion. In your own words, how does anonymity work in TOR?
+  ## c)Onion. In your own words, how does anonymity work in TOR?
 Reference:
 - Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
 - Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
+- so the anonymite is based on layers that don't have access through other layers, the entry node doesn't provide my identity to middle node and middle not to exit node
+- encryption used in these layers
 ## d)What kind of the threat models could TOR fit?  
 Reference:
 - Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
