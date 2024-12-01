@@ -41,10 +41,29 @@ Chapters:
 - Basic consept of TOR is introduced
   - how it is build on circuits with onion proxys (OP), nodes (entry, middle, exit) and hidden services (HS)
     - also components of network like rendezvous points (RP), bridges, service directories (DS), introduction points work and why those are essential for creating anonymity 
-  - article describes how circuits are established and what kind of encryption mechanisms are used
+  - article describes how circuits are established and what kind of encryption mechanisms are used when securing the connection
+    - basically connection is established using installed client which connects with DS and gets lists of free relays and chooses three of them to be entry, middle and exit. Connections are sealed with symmetric keys negotiated via Diffie Hellman Key exchange protocol
+  - it also describes how it differs when dealing with 'public' services and when dealing wtih hidden services
+  - normal circuits don't hide the service that user is using - in hidden services which support anonymity with so called rendezvous points which hide both communicators identity
 - Figure 6 is about categorization of attacks towards TOR
   - it focuses solely on de-anonymization attacks
   - de-anonymization has four subcategories which are labeled based on networks components used in attack
   - active means active participation in traffic, passive is listening
   - last branches are actual attacks/techniques performed
 - The idea of figure is to give an overview of different attack types and especialy de-anonymistaion attacks
+
+### PhishSticks - The Ethical Hackers tool for BadUSB (Video) by Halonen, Ollikainen, Rajala 2023
+Reference: Halonen, Ollikainen, Rajala 2023: PhishSticks - The Ethical Hackers tool for Bad USB. link: https://www.youtube.com/watch?v=bDzVevtZiWE
+#### Summary
+ - video is informative video about security measures especially about USB device used to penetration test
+ - first yuo lure the user, in this case The Ceo to insert USB-device on his computer
+ - it activates windos powershell and starts recording key strokes
+ - it stores the data and sends it penetrator via HTTP-mail and deletes it contents after sending
+ as a result password is lost, money is lost, freedom is lost
+
+
+## a Install Tor browser and acces Tor network
+Reference: https://www.torproject.org/download/ and 
+
+
+  
