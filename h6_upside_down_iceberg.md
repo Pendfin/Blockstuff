@@ -99,7 +99,7 @@ gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torp
 ![image](https://github.com/user-attachments/assets/1ec0d490-a506-4ea9-9ef1-1b36352c1f0c)
 
 ## b) Browse TOR
-### Searching for oninon search engine ´with duckduckgo
+#### Searching for oninon search engine with duckduckgo
   -  ![image](https://github.com/user-attachments/assets/a0f6c7ff-beb9-482b-8735-79e31f595758)
   -  picking this one:
     -![image](https://github.com/user-attachments/assets/afdbd73c-3d53-41eb-b2c1-cf44c07c91ee)
@@ -107,7 +107,7 @@ gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torp
    -![image](https://github.com/user-attachments/assets/4a460da5-8aa7-484f-8112-23f5880e86b0)
  -also using this
   - ![image](https://github.com/user-attachments/assets/8f83b7ac-0771-4bd5-ab7f-5b5db288782a)
-### Human rights - Peace organisations
+#### Human rights - Peace organisations
 - serch in Ahmia - found this
   -![image](https://github.com/user-attachments/assets/1c7ec03c-b2f0-4913-a741-c37c6f8e6a01)
 - and with onion engine
@@ -116,20 +116,18 @@ gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torp
   - ![image](https://github.com/user-attachments/assets/b693677c-4a85-48ba-a997-afe230b6a150)
   - after some trying also through the darknet it was found
     - ![image](https://github.com/user-attachments/assets/d13ac9f9-2b36-45cc-8a0f-952f8515871a)
-
   - not an easy job to use search engine - it has a different logic (like way back in the beginning of www)
-### marketplace
+#### marketplace
 - just hit the saerch engine with marketplace and fing
   - ![image](https://github.com/user-attachments/assets/50bab6b6-cd17-4113-a845-e0b897771501)
 - or
   - ![image](https://github.com/user-attachments/assets/5e9e8d0e-9f55-44a3-bdd0-e2658da0b64a)
-### fraud
+#### fraud
 - is this meaning doing, klearning or being....? first of all lots of sites offer you instructions for fraud e.g the anonymous marketplace
 - ![image](https://github.com/user-attachments/assets/37f54cb9-7ecf-4ee2-b2f2-7d0eb840605a)
 - and of course where there are malice there are dogooders or maybe those are also fraud
   -  ![image](https://github.com/user-attachments/assets/04cb0fba-52df-4599-af7c-c5b4b6bde2d2)
-
-### forum
+#### forum
 - blinklist has forum
   -![image](https://github.com/user-attachments/assets/145d0c51-0f98-4881-988d-b89d6ffe60ef)
 - but it smells fishy, only one post
@@ -139,7 +137,7 @@ gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torp
   - ![image](https://github.com/user-attachments/assets/35f038c8-27f0-43bb-ace9-67dbbb3ac6b0)
   - ![image](https://github.com/user-attachments/assets/bdd134d5-794e-46cc-be5f-7426b30d8598)
 - many forums are more like marketplaces, but you can use Reddit   
-### well known organisation
+#### well known organisation
 - amnesty international as was earlier mentioned but also CIA
   - ![image](https://github.com/user-attachments/assets/317d5696-4983-4af9-bcb4-62ada15f338d)
   
