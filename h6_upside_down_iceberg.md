@@ -65,8 +65,87 @@ Reference: Halonen, Ollikainen, Rajala 2023: PhishSticks - The Ethical Hackers t
 ## a)  Install Tor browser and acces Tor network
 Reference: https://www.torproject.org/download/ and 
 - Doing this on Virtual Machine (Debian GNU/Linux 12/64-bit, Xfce version 4.18) running in Oracle virtual toolbox. And this running in Windows environment (https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md )
-- First go to the TOR-project web page and download it
-- 
+- First go to the (with firefox) TOR-project web page and download it -->https://www.torproject.org/--> download browser--> there i want to know how to verify browsers signature (https://support.torproject.org/tbb/how-to-verify-signature/)
+- checking that my gnupg is up-to-date (sudo apt-get install gnupg) and it is
+- fetching developer keys -
+  -~$ gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+gpg: key 4E2C6E8793298290: public key "Tor Browser Developers (signing key) <torbrowser@torproject.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+pub   rsa4096 2014-12-15 [C] [expires: 2027-07-15]
+      EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+uid           [ unknown] Tor Browser Developers (signing key) <torbrowser@torproject.org>
+sub   rsa4096 2024-07-15 [S] [expires: 2026-10-26]
+- so this is the public key used to verify releases --> now create keyring
+  - gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+- now I downloaded both files, the actual browser or OP  (Onion proxy)
+ - ~/Downloads$ ls
+age-v1.2.0-linux-amd64.tar.gz
+tor-browser-linux-x86_64-14.0.3.tar.xz
+tor-browser-linux-x86_64-14.0.3.tar.xz.asc
+- Comfirming it: $ gpgv --keyring ./tor.keyring ~/Downloads/tor-browser-linux-x86_64-14.0.3.tar.xz.asc ~/Downloads/tor-browser-linux-x86_64-14.0.3.tar.xz
+gpgv: Signature made ti 26. marraskuuta 2024 05.12.55 EET
+gpgv:                using RSA key CAAE408AEBE2288E96FC5D5E157432CF78A65729
+gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torproject.org>" --> good to go and install it, nut before that uncompress it with $ tar xf tor-browser-linux-x86_64-14.0.3.tar.xz
+- checkiong it from teh desktop - i've checked this so just launch it 
+  ![image](https://github.com/user-attachments/assets/48806bbe-aedd-4645-bcd3-fabde5963065)
+- and here we go 
+  ![image](https://github.com/user-attachments/assets/3fa74ec4-7b8d-46fd-a909-54c9c359e7af)
+- checking preferences of my connection (this ins my first time though), not apllying anuy bridges at this point, because it is not forbidden in Finland and my VPN is still here, not changing other preferences but setting security level a bit higher 
+- clicking connect--> and it goes to duckduckgo.onion searching for wikipedia
+- what happened behind th courtains, below the deck or under the hood--> browser  or OP connected DS (directory service), get nodes for entry, middle and exit
+- https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/?q=wikipedia&ia=web
+- --> in this case the page is outside TOR it can be seen that the page is visited but my anonymity is guaranteed through TOR-circuit which can be seen in 
+![image](https://github.com/user-attachments/assets/1ec0d490-a506-4ea9-9ef1-1b36352c1f0c)
+
+## b) Browse TOR
+### Searching for oninon search engine ´with duckduckgo
+  -  ![image](https://github.com/user-attachments/assets/a0f6c7ff-beb9-482b-8735-79e31f595758)
+  -  picking this one:
+    -![image](https://github.com/user-attachments/assets/afdbd73c-3d53-41eb-b2c1-cf44c07c91ee)
+ - trying to find something e.g. ahmia-->
+   -![image](https://github.com/user-attachments/assets/4a460da5-8aa7-484f-8112-23f5880e86b0)
+ -also using this
+  - ![image](https://github.com/user-attachments/assets/8f83b7ac-0771-4bd5-ab7f-5b5db288782a)
+### Human rights - Peace organisations
+- serch in Ahmia - found this
+  -![image](https://github.com/user-attachments/assets/1c7ec03c-b2f0-4913-a741-c37c6f8e6a01)
+- and with onion engine
+  - ![image](https://github.com/user-attachments/assets/74c0e977-c86f-4303-ab02-06896aa0415c)
+  - And when searching on the public internet you can find multiple news form the organisations that have also .onion site
+  - ![image](https://github.com/user-attachments/assets/b693677c-4a85-48ba-a997-afe230b6a150)
+  - after some trying also through the darknet it was found
+    - ![image](https://github.com/user-attachments/assets/d13ac9f9-2b36-45cc-8a0f-952f8515871a)
+
+  - not an easy job to use search engine - it has a different logic (like way back in the beginning of www)
+### marketplace
+- just hit the saerch engine with marketplace and fing
+  - ![image](https://github.com/user-attachments/assets/50bab6b6-cd17-4113-a845-e0b897771501)
+- or
+  - ![image](https://github.com/user-attachments/assets/5e9e8d0e-9f55-44a3-bdd0-e2658da0b64a)
+### fraud
+- is this meaning doing, klearning or being....? first of all lots of sites offer you instructions for fraud e.g the anonymous marketplace
+- ![image](https://github.com/user-attachments/assets/37f54cb9-7ecf-4ee2-b2f2-7d0eb840605a)
+- and of course where there are malice there are dogooders or maybe those are also fraud
+  -  ![image](https://github.com/user-attachments/assets/04cb0fba-52df-4599-af7c-c5b4b6bde2d2)
+
+### forum
+- blinklist has forum
+  -![image](https://github.com/user-attachments/assets/145d0c51-0f98-4881-988d-b89d6ffe60ef)
+- but it smells fishy, only one post
+- almost all the links end up "onion site not found"
+-  ![image](https://github.com/user-attachments/assets/47af263a-a868-4b42-887f-79e242b5e37b)
+  
+### well known organisation
+- amnesty international as was earlier mentioned but also CIA
+  - ![image](https://github.com/user-attachments/assets/317d5696-4983-4af9-bcb4-62ada15f338d)
+  
+- all together it seems that ahmia search engine fetches better sites that are actually online
+ 
+  
+ 
+  
+
 
 
 ## c)Onion. In your own words, how does anonymity work in TOR?
