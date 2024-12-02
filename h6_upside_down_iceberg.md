@@ -248,6 +248,12 @@ Reading package lists... Done
 - so how to find these pages? check them in the reddit--> learning to use address book
 - ![image](https://github.com/user-attachments/assets/6781ce55-34b0-4569-a207-0b7aa5f5a857)
 - a lot less stuff than in TOR, but neatly available in address book
+- ![image](https://github.com/user-attachments/assets/9c60ea69-f6df-464b-aa71-f56d99f2e9b2)
+- most of sites are down, but the consol has some nice features like email etc...
+- you have to add address that you find to addressbook . .you copy those addresses and then you're ready to visit
+- ![image](https://github.com/user-attachments/assets/ab2629d8-7193-4ae2-b0a5-915a699c3969)
+- ![image](https://github.com/user-attachments/assets/8449ca74-6f94-42a8-8f7d-897a3d415e3b)
+- ![image](https://github.com/user-attachments/assets/fa4ce186-934e-4f4a-a035-d6b474433e73)
 - and again feels like back in nineties
 - ![image](https://github.com/user-attachments/assets/106d3473-c781-4ddd-a999-1fa2a9f72ee0)
 
