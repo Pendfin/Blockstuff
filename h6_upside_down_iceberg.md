@@ -148,9 +148,13 @@ Reference:
 - Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
 - Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
 - Li, N. (2010). Research on Diffie-Hellman key exchange protocol. https://doi.org/10.1109/ICCET.2010.5485276
+- Basyoni, L., Fetais, N., Erbad, A., Mohamed, A., & Guizani, M. (2020). Traffic Analysis Attacks on Tor: A Survey. https://doi.org/10.1109/ICIoT48696.2020.9089497
+
+
 - so the anonymity is based on layers that don't have access through other layers, the entry node doesn't provide my identity to middle node and middle not to exit node
 - encryption used in these layers-->is made layer by layer, meaning it uses Diffie–Hellman handshake (which is explained in simple way and illiustrated [here]([url](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange))).
   - but basically it means that parties agree about parameters that are used to create public keys from their own private keys sharing results with each other and  combining the received public keys  with their own private keys they share keys that can be used to secure communication between them (as long as secrets are safe)
+  - keys also change due the limited lifetime of a circuit and rotation of circuit keys
   - actual relays are fixed size and header and paylouad encrypted with 128-bit counter mode Advanced Encryption Standard (AES-CTR), with symmetric keys meaning that those are one time used and not known outside the nodes
   - when hopping out of the onion the traffic is not anymore encrypted if not additional means are used
 
@@ -160,12 +164,40 @@ Reference:
 - Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
 - https://owasp.org/www-project-threat-model/
 - https://github.com/Attacks-on-Tor/Attacks-on-Tor
-- https://css.csail.mit.edu/6.858/2023/readings/tor-traffic-analysis.pdf
 - https://onionservices.torproject.org/apps/web/oniongroove/threat/
+
 - threat models that might apply to TOR or more precisely where it could be helpful with?
-- 
-  - basic feature of TOR is anonymity and the information is not easily available in the network
-  - it is not more secure or less secure than public internet
-  - if communication is or tarffic is needed to keep hidden like in espionage or ......
+-   - basic feature of TOR is anonymity and the information is not easily available in the network
+  - it is not more secure or less secure than public internet if you compromise yourself
+  - if communication is or traffic is needed to keep hidden yous hould use onion or hiddenservices
+  - threat models that fit for TOR:
+    -  traffic and network surveillance - this is commonly used in de-anonymization attacks and it is done by a passive adversary
+    -  active adveraries - those can falsify data that is propagated int network
+    -  De-anonymization attacks - trying to match the traffic in certain points of network e.g. inbound and outbound
+    -  hijacking parts of the network - like in Sybil attact where entry points were created in masses 
+  - threats might be involved in industrial espionage, military intelligence operations, free press - basically threat against neeed to communicate anonymously and deliver information in secure way   
  
-## 
+## e)Don't stick that stick 
+ Reference: 
+ - PhishSticks on Github (https://github.com/therealhalonen/PhishSticks/)
+ - PhishSticks Youtube channel(https://www.youtube.com/@phishsticks_pentest)
+ - https://attack.mitre.org
+
+  - Phisticks attack work simply connecting a malicous USB device in a computer. This device actually can contact without actual contact
+    - Phistick pretends to be a keyboard and when connected it sends preprgorammed keystrokes to commandpromt or powershell ad executes wanted malice.
+    - As it runs you've a split second to realise what has happened as it strokes the commands in
+    - In this case it is keystroke listener (but it could be something else) which is designed to record and send keystrokes
+    - The spied keystrokes are send via http-mail to wanted address where you can retrieve the outcome and do your evil
+  - If you mean a majority of organisation I would guess that they don't have policies against USB devices. But as this said I would continue that larger organisations have. So the typical target is small or medium size organisation
+  - Phistick attacks link to  under categories of initial access, execution, credential access, collection and  category or exfiltration in Mitre Att@ck enterprise matrix
+  - it is also categorized as malware and used as first step to exploit targeted systems
+  - on defenses side this should firstly be 'limit hardware installation' and secondly 'limit software installation'
+  - in kill chain this is delivery phase
+  - the risk could be mitigated in several ways:
+    - disallowing usb-devices by disabling USB-ports
+    - using only trusted usb-devices
+    - control software of usb-devices
+    - user guidence to use only known USB-devices
+    - also multifactor authentication would help, because when using stolen credentials it would harder to get in
+    -  network intrusion prevention which could monitor unusual traffic going out
+    
