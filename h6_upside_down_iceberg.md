@@ -160,14 +160,14 @@ Reference:
 
 ## d)What kind of the threat models could TOR fit?  
 Reference:
-- Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
-- Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
-- https://owasp.org/www-project-threat-model/
-- https://github.com/Attacks-on-Tor/Attacks-on-Tor
-- https://onionservices.torproject.org/apps/web/oniongroove/threat/
+  - Dingledine, R., Mathewson, N., & Syverson, P. F. (2004, August). Tor: The second-generation onion router. In USENIX security symposium (Vol. 4, pp. 303-320). Available at: https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf
+  - Reference: Karunanayake, I. et al. (2021) “De-Anonymisation Attacks on Tor: A Survey,” IEEE Communications Surveys and Tutorials, 23(4), pp. 2324–2350. Available at: https://doi.org/10.1109/COMST.2021.3093615
+  - https://owasp.org/www-project-threat-model/
+  - https://github.com/Attacks-on-Tor/Attacks-on-Tor
+  - https://onionservices.torproject.org/apps/web/oniongroove/threat/
 
 - threat models that might apply to TOR or more precisely where it could be helpful with?
--   - basic feature of TOR is anonymity and the information is not easily available in the network
+  - basic feature of TOR is anonymity and the information is not easily available in the network
   - it is not more secure or less secure than public internet if you compromise yourself
   - if communication is or traffic is needed to keep hidden yous hould use onion or hiddenservices
   - threat models that fit for TOR:
@@ -179,9 +179,9 @@ Reference:
  
 ## e)Don't stick that stick 
  Reference: 
- - PhishSticks on Github (https://github.com/therealhalonen/PhishSticks/)
- - PhishSticks Youtube channel(https://www.youtube.com/@phishsticks_pentest)
- - https://attack.mitre.org
+   - PhishSticks on Github (https://github.com/therealhalonen/PhishSticks/)
+   - PhishSticks Youtube channel(https://www.youtube.com/@phishsticks_pentest)
+   - https://attack.mitre.org
 
   - Phisticks attack work simply connecting a malicous USB device in a computer. This device actually can contact without actual contact
     - Phistick pretends to be a keyboard and when connected it sends preprgorammed keystrokes to commandpromt or powershell ad executes wanted malice.
@@ -200,4 +200,61 @@ Reference:
     - user guidence to use only known USB-devices
     - also multifactor authentication would help, because when using stolen credentials it would harder to get in
     -  network intrusion prevention which could monitor unusual traffic going out
-    
+
+## f) Voluntary: I2P. Install and demonstrate use of I2P.
+
+- installing (again environment is-  Virtual Machine (Debian GNU/Linux 12/64-bit, Xfce version 4.18) running in Oracle virtual toolbox. And this running in Windows environment)
+- seraching for I2P--> https://geti2p.net/en/--> installing it for debian-- but first dowloaded the keys to verify
+  - ![image](https://github.com/user-attachments/assets/cc5416e5-aa36-4202-9cbf-ddeb3c90e7b3)
+- sudo apt-get update
+- sudo apt-get install apt-transport-https lsb-release curl--> these weren't installed but now those are
+- checking my version: $ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 12 (bookworm)
+Release:	12
+Codename:	bookworm
+ - creating the keyrings
+ - $ echo "deb [signed-by=/usr/share/keyrings/i2p-archive-keyring.gpg] https://deb.i2p.net/ $(lsb_release -sc) main" \
+  | sudo tee /etc/apt/sources.list.d/i2p.list
+deb [signed-by=/usr/share/keyrings/i2p-archive-keyring.gpg] https://deb.i2p.net/ bookworm main
+  - $ curl -o i2p-archive-keyring.gpg https://geti2p.net/_static/i2p-archive-keyring.gpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13248  100 13248    0     0  26480      0 --:--:-- --:--:-- --:--:-- 26496
+    - verofying the key fingerprint
+    - $ gpg --keyid-format long --import --import-options show-only --with-fingerprint i2p-archive-keyring.gpg
+gpg: key 67ECE5605BCF1346: 11 signatures not checked due to missing keys
+pub   rsa4096/67ECE5605BCF1346 2013-10-10 [SC] [expires: 2025-09-20]
+      Key fingerprint = **7840 E761 0F28 B904 7535  49D7 67EC E560 5BCF 1346**
+uid                            I2P Debian Package Repository <killyourtv@i2pmail.org>
+sub   rsa4096/D241CEBF3CAB5E06 2014-03-21 [S] [expires: 2025-09-20]
+-copying ht e keyrings--> $ sudo cp i2p-archive-keyring.gpg /usr/share/keyrings
+- getting the I2P repository
+  - $ sudo apt-get update
+Get:1 https://deb.i2p.net bookworm InRelease [30,9 kB]                         
+Hit:2 http://deb.debian.org/debian bookworm InRelease                          
+Get:3 http://security.debian.org/debian-security bookworm-security InRelease [48,0 kB]
+Hit:4 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:5 http://deb.debian.org/debian bookworm-backports InRelease
+Get:6 https://deb.i2p.net bookworm/main amd64 Packages [1 924 B]
+Fetched 80,8 kB in 4s (22,9 kB/s)       
+Reading package lists... Done
+- now installing it sudo apt-get install i2p i2p-keyring--> complete and success
+- configuring with instruction from here
+- ![image](https://github.com/user-attachments/assets/6526c7b7-5f85-42be-8bd4-e88978a0c521)
+- and i can see tunnels
+- ![image](https://github.com/user-attachments/assets/e0fb62dc-8751-4363-828f-77b87b4f936e)
+- so how to find these pages? check them in the reddit--> learning to use address book
+- ![image](https://github.com/user-attachments/assets/6781ce55-34b0-4569-a207-0b7aa5f5a857)
+- a lot less stuff than in TOR, but neatly available in address book
+- and again feels like back in nineties
+- ![image](https://github.com/user-attachments/assets/106d3473-c781-4ddd-a999-1fa2a9f72ee0)
+
+ 
+
+ 
+
+## g) Voluntary: Hyphanet. Install and demonstrate use of Hyphanet.
+## h) Voluntary: Freenet. Install and demonstrate use of Freenet.
+## i) Voluntary: GNUnet. Install and demonstrate use of GNUnet
