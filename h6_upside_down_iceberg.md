@@ -241,7 +241,8 @@ Get:6 https://deb.i2p.net bookworm/main amd64 Packages [1 924 B]
 Fetched 80,8 kB in 4s (22,9 kB/s)       
 Reading package lists... Done
 - now installing it sudo apt-get install i2p i2p-keyring--> complete and success
-- configuring with instruction from here
+- configuring with instruction from here https://geti2p.net/en/about/browser-config
+- doing it manually and after it should be working
 - ![image](https://github.com/user-attachments/assets/6526c7b7-5f85-42be-8bd4-e88978a0c521)
 - and i can see tunnels
 - ![image](https://github.com/user-attachments/assets/e0fb62dc-8751-4363-828f-77b87b4f936e)
@@ -253,14 +254,11 @@ Reading package lists... Done
 - you have to add address that you find to addressbook . .you copy those addresses and then you're ready to visit
 - ![image](https://github.com/user-attachments/assets/ab2629d8-7193-4ae2-b0a5-915a699c3969)
 - ![image](https://github.com/user-attachments/assets/8449ca74-6f94-42a8-8f7d-897a3d415e3b)
-- ![image](https://github.com/user-attachments/assets/fa4ce186-934e-4f4a-a035-d6b474433e73)
 - and again feels like back in nineties
 - ![image](https://github.com/user-attachments/assets/106d3473-c781-4ddd-a999-1fa2a9f72ee0)
-
+- the difference to e.g. TOR is that I2P doesnt't have exit point. Meaning that all services are inside network
  
-
- 
-
 ## g) Voluntary: Hyphanet. Install and demonstrate use of Hyphanet.
+
 ## h) Voluntary: Freenet. Install and demonstrate use of Freenet.
 ## i) Voluntary: GNUnet. Install and demonstrate use of GNUnet
