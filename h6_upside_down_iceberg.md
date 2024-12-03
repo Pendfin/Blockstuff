@@ -259,6 +259,41 @@ Reading package lists... Done
 - the difference to e.g. TOR is that I2P doesnt't have exit point. Meaning that all services are inside network
  
 ## g) Voluntary: Hyphanet. Install and demonstrate use of Hyphanet.
+-starting woth webpage
+- wget 'https://www.draketo.de/dateien/freenet/build01498/new_installer_offline_1498.jar' -O new_installer_offline.jar;
+java -jar new_installer_offline.jar;
+- but i should have java
+- going to https://adoptium.net/temurin/releases/?os=linux --> checking the version but how do i run it?
+- https://adoptium.net/installation/linux/ --> here's salvation taking these steps but adding rootuser priviledges form time to time and changing to higher version (21)
+- java -jar new_installer_offline.jar;
+- ![image](https://github.com/user-attachments/assets/af794fe9-d532-4c7e-8e3c-df61e3f23d8f)
+- ![image](https://github.com/user-attachments/assets/a8a3c350-ba06-4122-9463-a1f6ce11afd9)
+- ![image](https://github.com/user-attachments/assets/644d6d83-1d0e-452d-935e-21d3a729ae1e)
+- ![image](https://github.com/user-attachments/assets/934767f1-963c-4dfa-a495-da9780ebafc4)
+- - now starting it (with guide offcourse http://freesocial.draketo.de/)
+- configuring it creating the secret identity
+-  ![image](https://github.com/user-attachments/assets/0b706527-2a08-4e7f-a36b-1aa4ff6db0e8)
+- this is pretty user friendly (at this point thought)
+- still waiting ![image](https://github.com/user-attachments/assets/2a85487a-a5a0-4aee-84d6-5e03358ab2df)
+- didn't want to waitt anymore, starting exploring
+- ![image](https://github.com/user-attachments/assets/ef2b36b8-ea39-4439-8507-5551d7864998)
+- ![image](https://github.com/user-attachments/assets/36ee4cff-9697-463f-803a-5767598e0ddb)
+- ![image](https://github.com/user-attachments/assets/db4fee27-eb61-4163-bc0f-883eea3c013e)
+-  so you have multiple apps but you can also search
+- ![image](https://github.com/user-attachments/assets/da92ff48-f470-4fbb-ba01-a38d6403a7d0)
+- pretty slow and stalls sometimes search crashes but...
+- installing som plugins to get chattery...
+- ![image](https://github.com/user-attachments/assets/7581ca78-5d07-4cda-bc48-2b53e9d66702)
+- finally getting to create identity
+- ![image](https://github.com/user-attachments/assets/ad457bb6-b7b6-4edd-af22-b7be0da2625d)
+- some sites- ![image](https://github.com/user-attachments/assets/48c70220-45f3-40d8-b971-180d8cf06929)
 
+  
 ## h) Voluntary: Freenet. Install and demonstrate use of Freenet.
+-install - coud'n find anything else than a developer installation, didn't want to try that
 ## i) Voluntary: GNUnet. Install and demonstrate use of GNUnet
+- as trying to install https://docs.gnunet.org/latest/installing.html
+- a lot of packagers were missing
+- then tried sudo apt-get install gnunet--> installation stared
+- but again couldn't  compile source code 
+
