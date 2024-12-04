@@ -293,7 +293,8 @@ java -jar new_installer_offline.jar;
 -install - coud'n find anything else than a developer installation, didn't want to try that
 ## i) Voluntary: GNUnet. Install and demonstrate use of GNUnet
 - as trying to install https://docs.gnunet.org/latest/installing.html
-- a lot of packagers were missing
-- then tried sudo apt-get install gnunet--> installation stared
-- but again couldn't  compile source code 
+- a lot of packages were missing
+- then tried sudo apt-get install gnunet--> installation started
+- but again couldn't compile source code
+- frustrated after an hour, and so did my VM which froze
 
