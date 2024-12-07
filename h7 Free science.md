@@ -1,20 +1,20 @@
 #### Task based on: https://terokarvinen.com/trust-to-blockchain/#homework
 
 ## X
-review a article
-- So first question is where to find suitable articles? I'm customed to use two starting points: first one is Finna(https://haaga-helia.finna.fi/?userLang=fi&lng=fi) and second one is Keenious (https://keenious.com/explore/). Then extending it to digital libraries like ACM, IEEE or search engines like Google scholar
+Review a article
+- First question is where to find suitable articles? I'm customed to use two starting points: first one is Finna(https://haaga-helia.finna.fi/?userLang=fi&lng=fi) and second one is Keenious (https://keenious.com/explore/). Then extending it to digital libraries like ACM, IEEE or search engines like Google scholar
 - I also check the Jufo rating (https://jfp.csc.fi/jufoportaali). Normally if a topic is new I try to find a SLR(systematic literature review) or MLR (multi literature review). The latter includes also some 'grey literature' which must be used carefully in scientific context.
 
-- First scanning Finna with parameters, articles, 2022--> and phishing and infosec as search phrases
-- And doing the same with Keenious with same parameters. Then scimming through results..... and in keenious found something interesting
+- First scanning Finna with parameters, articles, 2022 --> and phishing and infosec as search phrases
+- And doing the same with Keenious with same parameters. Then scimming through results..... and in Keenious found something interesting
 - What I found: Mitigation strategies against the phishing attacks: A systematic literature review--> published in Computers & Security
 Volume 132, September 2023, 103387 and available in Elsevier(https://www-sciencedirect-com.ezproxy.haaga-helia.fi/science/article/pii/S0167404823002973?via%3Dihub)
  - Checking the classification of publification in Jufo: https://jfp.csc.fi/jufoportaali?Jufo_ID=53963 --> it is 2, and in scholar ther has been already 58 references to this article
-- reference: Naqvi, B. et al. (2023) “Mitigation strategies against the phishing attacks: A systematic literature review,” Computers & Security, 132, p. 103387. Available at: https://doi.org/10.1016/J.COSE.2023.103387.
+- Rference: Naqvi, B. et al. (2023) “Mitigation strategies against the phishing attacks: A systematic literature review,” Computers & Security, 132, p. 103387. Available at: https://doi.org/10.1016/J.COSE.2023.103387.
 
 #### Summarizing:Mitigation strategies against the phishing attacks: A systematic literature review
 - Phishing attacks are most common  attack mechanisms used by advesaries
-  - it has two main impacts: finacial losses and reputaniol damage
+  - it has two main impacts: finacial losses and reputational damage
 - Three most common used mediums are internet, shor messaging services (SMS) adn voice
   - all these mediums have differnet kind of attacking vectors like websites or smishing
 - The targets of phishing lay in all sectors of society. In public sector, banks, insurance, healthcare
@@ -65,7 +65,9 @@ Volume 132, September 2023, 103387 and available in Elsevier(https://www-science
 
 ### a) voluntary - how to create a wacth for science articles?
 - tried to create this: maybe google scholar would be easiest to create an alert with googles alert function or scholar's own function
-- topic is: scholar.google.com "infosec + phishing" - now we wait and see.....
+- topic is: "infosec + phishing" - now we wait and see.....
+- ![image](https://github.com/user-attachments/assets/04d69930-3f2d-4162-b254-bc05be466075)
+
 
 
 
