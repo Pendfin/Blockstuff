@@ -64,6 +64,8 @@ Volume 132, September 2023, 103387 and available in Elsevier(https://www-science
       - Not so common phishing vectors--> most of the mitigation strategies focus on websites and emaila, which are the most common attack vectors But for those less common also needs to be found mitigation strategies if those become more popular    
 
 ### a) voluntary - hiw to create a wacth for science articles?
+- tried to create this: maybe google scholar would be easiest to create a alert withi googles alert function or scholar's own function
+- topic is: scholar.google.com "infosec + phishing" - now we wait and see.....
 
 
 
