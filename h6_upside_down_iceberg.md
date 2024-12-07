@@ -259,7 +259,7 @@ Reading package lists... Done
 - the difference to e.g. TOR is that I2P doesnt't have exit point. Meaning that all services are inside network
  
 ## g) Voluntary: Hyphanet. Install and demonstrate use of Hyphanet.
--starting woth webpage
+-starting with webpage
 - wget 'https://www.draketo.de/dateien/freenet/build01498/new_installer_offline_1498.jar' -O new_installer_offline.jar;
 java -jar new_installer_offline.jar;
 - but i should have java
