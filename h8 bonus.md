@@ -1,9 +1,11 @@
 ## list and link
-### a) Nada
+### a) Something added 
+ - only h1 e) fundamentals of infosec were altered after evaluation https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md#e
 
 ### B) my voluntary task
  - h0 Hello - no voluntary tasks available
- - h1 Adversarial mindset - no voluntary tasks accomplished
+ - h1 Adversarial mindset -
+  - e) Fundamentals of infosec - https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md#e 
  - h2 Pubkey - no voluntary tasks accomplished 
  - h3 Hash
   - f)two minute job https://github.com/Pendfin/Blockstuff/blob/main/h3_hash.md#f-voluntary-two-minute-job
