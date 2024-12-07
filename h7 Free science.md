@@ -10,7 +10,7 @@ Review a article
 - What I found: Mitigation strategies against the phishing attacks: A systematic literature review--> published in Computers & Security
 Volume 132, September 2023, 103387 and available in Elsevier(https://www-sciencedirect-com.ezproxy.haaga-helia.fi/science/article/pii/S0167404823002973?via%3Dihub)
  - Checking the classification of publification in Jufo: https://jfp.csc.fi/jufoportaali?Jufo_ID=53963 --> it is 2, and in scholar ther has been already 58 references to this article
-- Rference: Naqvi, B. et al. (2023) “Mitigation strategies against the phishing attacks: A systematic literature review,” Computers & Security, 132, p. 103387. Available at: https://doi.org/10.1016/J.COSE.2023.103387.
+- Reference: Naqvi, B. et al. (2023) “Mitigation strategies against the phishing attacks: A systematic literature review,” Computers & Security, 132, p. 103387. Available at: https://doi.org/10.1016/J.COSE.2023.103387.
 
 #### Summarizing:Mitigation strategies against the phishing attacks: A systematic literature review
 - Phishing attacks are most common  attack mechanisms used by advesaries
