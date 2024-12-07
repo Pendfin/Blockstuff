@@ -14,6 +14,7 @@
  - h6 Upside Down Iceberg
   - f) Voluntary: I2P https://github.com/Pendfin/Blockstuff/blob/main/h6_upside_down_iceberg.md#f-voluntary-i2p-install-and-demonstrate-use-of-i2p
   - g) Voluntary: Hyphanet https://github.com/Pendfin/Blockstuff/blob/main/h6_upside_down_iceberg.md#g-voluntary-hyphanet-install-and-demonstrate-use-of-hyphanet
+  - h) and i) tried, frustrade and failed
  - h7 Free science!
   - a) Create an alert - https://github.com/Pendfin/Blockstuff/blob/main/h7%20Free%20science.md#a-voluntary---how-to-create-a-wacth-for-science-articles 
- - h8 Bonus - 
+ - h8 Bonus - https://github.com/Pendfin/Blockstuff/blob/main/h8%20bonus.md#b-my-voluntary-task
