@@ -37,22 +37,22 @@ Volume 132, September 2023, 103387 and available in Elsevier(https://www-science
   - email, eFax, instant messaging, social media networks, websites, and Wi-Fi. smishing and vishing
    - even though multiple vectors can include more detailed techniques )like man-in-the-middle-attack) the most common vector is website (over half) and second is email and third is general mitigation strategy not addressed to any particular vector
   - Recommendations and guidelines for organizations and end-users are:
-   - Follow security policies
-    -  reporting protocols, staff training procedures
-   - Implement access control
+    - Follow security policies
+     -  reporting protocols, staff training procedures
+    - Implement access control
     - password policies, login rituals, MFA, tripwires
-   - Implement endpoint security
+    - Implement endpoint security
     - host-based intrusion detection systems (HIDS) agains malware and viruses or email blockers
-   - Use training and awareness programs
-    - multiple ways to teach and train people from awareness sessions to courses and actively sending phishing emails 
-   - Implement policies for devices
-    - expected lif expectancy of devices, repair policy 
-   - Keep in mind the advice
-    - reming not to share any information to outsiders, be vigilant of unknown contacts
-   - Use awareness as the mitigation strategy
-    - for end-users: use browsers anti-phishing function, keep software up-to-date, don't use the same passwords in multiple locations
-   - Use security advice
-    - for end-user: dont' use public computers, use string authentication
+    - Use training and awareness programs
+     - multiple ways to teach and train people from awareness sessions to courses and actively sending phishing emails 
+    - Implement policies for devices
+     - expected lif expectancy of devices, repair policy 
+    - Keep in mind the advice
+     - reming not to share any information to outsiders, be vigilant of unknown contacts
+    - Use awareness as the mitigation strategy
+     - for end-users: use browsers anti-phishing function, keep software up-to-date, don't use the same passwords in multiple locations
+    - Use security advice
+     - for end-user: dont' use public computers, use string authentication
  - Gaps and open issues challenging mitigating attacks can be divided in two categories: human centric and technology centric
   - Human centric:
    - people take risk--> soon everything is digital and amount of the endpoints per capita increase. This leaves door open to social engineering. So the main question is how mitigated against human behaviour?
