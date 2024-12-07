@@ -75,7 +75,7 @@ The exploit had three stages -
 2. Because the target devices were iPhones they needed to use two another exploits to make it possible to be run in the phone   
 3. Actual app is then run on the phone and it uses normal phone features. It can turn on the camera,microphone, read messages or listen calls etc.
 
-Basically Pegasus exploited three unknown vulnerabilities in phone and one for user. Adrversary send text message for victim. Message was could be very agressively designed. What would you say when you get message that your daughter is in the hospital and the text message telling you this includes link to provide more information about accident. This would of course need some reconnaissance (e.g. social media) beforehand to know your soft spots.
+Basically Pegasus exploited three unknown vulnerabilities in phone and one for user. Adversary send text message for victim. Message was could be very agressively designed. What would you say when you get message that your daughter is in the hospital and the text message telling you this includes link to provide more information about accident. This would of course need some reconnaissance (e.g. social media) beforehand to know your soft spots.
 
 # C
 Instal debia on virtualbox 
@@ -147,6 +147,13 @@ Snapshot taken.
 
 
 ## E
+Fundamentals of infosec.
+As updating this voluntary task in last yards of course. I think this has couple of viewpoints:
+ - First: Confidentiality, integrity, availability and non-repudiation or CIA (Confidentiality, integrity, availability)-triad. Confidentiality - protect your data from the eyes and tenticles of others, integrity - you can trust your data hasn't been altered, availability - your data, your rules to handle it. 
+ - Second: Chaos of the world - the game of adversaries and defenders. Even though principles are good it is important to understand how things happen in real world. To understand potential weaknesses and evilness that might be happening around you. And this with real life examples. How to destroy confidentiality - how i can crack your passwords? How can i disintegrate your data by adding it some small details and availability- what if I deny your access to your data?
 
+References: 
+- Andress, J. 2019. Foundations of Information Security. No Starch Press
+- EC-Council University - What Are the Fundamentals of Information Security?https://www.eccu.edu/blog/cybersecurity/fundamentals-of-information-security/
 
 ## F
