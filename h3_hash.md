@@ -46,28 +46,24 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
 - the other way is use brute force to get in. You need tools for that
   - tools like Medusa, THC-Hydra, Brutus, Metaspoi, Dirbuster, wfuzz
   - first you have to identify users -
-
 #### 6.3
 - encryption ispart of signal intelligence
 - you should encrypt your secrets
 - one-way hashing is not encryption, but used for protecting passwords
 - one way algorithm - result is always the same for the same input, but it is irreversible, quick to create
 - you can use e.g sha256 to hash a string of characters
-
 #### 6.4
 - cracking passwords is pretty easy these days because
  - cpu's are getting faster and gpu's are used to crack passwords
  - passwords dictionaries available (breached passwords, rainbow tables - list of passwords)
  - weak algorithms
 - salting is a method to differ the hash from the same input
-
 #### 6.5
 - John the Ripper is password cracking software in linux
   - you can use dicectories, mangle words, output manipulation, hash format, it can continue cracking after you've stopped it, you can use also brute force
   - lm hash - weak hash - John crackes the password in two pieces - hashes that have same psaaswords look the same
   - nt hash  - is case sensitive
 - using dictionary means that you have a file of passwords which is used to cracking--> your result depends on
-
 #### 6.6
 - hashcat is another program to use for cracking passwords
   - it has also GPU support
@@ -83,10 +79,7 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
   - store them secure
 - User
   - two-way authentication
-    
-
-
--    
+  
 ## Exercises
 ### a) Billion dollar busywork
 Command 'echo -n "hello"|sha256sum' prints a hash. Try adding something to the string, e.g. 'echo -n 'hello asdf'|sha256sum'. What do you have to add to get a hash that starts with a zero? (Voluntary bonus: How is this related to Bitcoin? Voluntary difficult bonus: How many zeros can you get to the beginning? Voluntary difficult bonus: How does the difficulty raise?)
