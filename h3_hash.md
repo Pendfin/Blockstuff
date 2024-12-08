@@ -25,7 +25,7 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
 - and some tips when to use tabs, pipes and administrative commands
 - Source: Karvinen 2020: Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/)
 
-###  € Santos et al 2017: Security Penetration Testing - The Art of Hacking Series
+### voluntary: Santos et al 2017: Security Penetration Testing - The Art of Hacking Series
 
 #### 6.1
 - passwords are stored in multiple ways
@@ -46,7 +46,11 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
 - Third way if adversary gets to network device it practically owns the device
 - You can always use brute force to get in. But you need tools for that
   - tools like Medusa, THC-Hydra, Brutus, Metaspoi, Dirbuster, wfuzz
-  - first you have to identify users -
+  - first you have to identify users - and you need to choose your weapon again
+   -  enumerate users by hacking userlist with
+     -  RPC interface: SMB, NetBIOS, Samba
+     -  metasploit - multiple tools e.g. scanner
+     -  nmap- tons of scripts for use
 #### 6.3
 - encryption ispart of signal intelligence
 - you should encrypt your secrets
