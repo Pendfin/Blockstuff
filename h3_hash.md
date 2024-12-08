@@ -39,11 +39,12 @@ Source of these excercises is https://terokarvinen.com/trust-to-blockchain/#home
   - default passwords (can be found in multiple websites for multiple devices)
   - same passwoprds used for multiple occasions
   - admin passwords
-- one way is to capture or sniffing traffic and deploy man-in-the-middle attack
+- one way is to capture or sniff traffic or deploy man-in-the-middle attack
   - e.g. hotspots or hotel unprotected wifi
   - if you're connected to those, anyone can listen the traffic
-  - if adversary gets to network device it practically owns the device
-- the other way is use brute force to get in. You need tools for that
+- Second way is the man-in-the-middle-attacks you route traffic through your 'man'
+- Third way if adversary gets to network device it practically owns the device
+- You can always use brute force to get in. But you need tools for that
   - tools like Medusa, THC-Hydra, Brutus, Metaspoi, Dirbuster, wfuzz
   - first you have to identify users -
 #### 6.3
