@@ -1,6 +1,6 @@
 ## list and link
 ### a) Something added 
- - only h1 e) fundamentals of infosec were altered after evaluation https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md#e
+ - h1 e) fundamentals of infosec were altered after evaluation https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md#e
 
 ### B) my voluntary task
  - h0 Hello - no voluntary tasks available
