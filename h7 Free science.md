@@ -67,7 +67,7 @@ Volume 132, September 2023, 103387 and available in Elsevier(https://www-science
 - tried to create this: maybe google scholar would be easiest to create an alert with googles alert function or scholar's own function
 - topic is: "infosec + phishing" - now we wait and see.....
 - ![image](https://github.com/user-attachments/assets/04d69930-3f2d-4162-b254-bc05be466075)
-
+- day later:I got two emails of infosec and phishing category--> adjusted search --> infosec phishing "phishing" and now we wait and see is this more precise
 
 
 
