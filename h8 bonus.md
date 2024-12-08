@@ -8,6 +8,7 @@
    - e) Fundamentals of infosec - https://github.com/Pendfin/Blockstuff/blob/main/h1_perttu.md#e 
  - h2 Pubkey - no voluntary tasks accomplished 
  - h3 Hash
+   - x) € Santos et al 2017: Security Penetration Testing - The Art of Hacking Series https://github.com/Pendfin/Blockstuff/blob/main/h3_hash.md#-santos-et-al-2017-security-penetration-testing---the-art-of-hacking-series 
    - f)two minute job https://github.com/Pendfin/Blockstuff/blob/main/h3_hash.md#f-voluntary-two-minute-job
    - g) Where do you want to go today https://github.com/Pendfin/Blockstuff/blob/main/h3_hash.md#g-voluntary-bonus-where-do-you-want-to-go-today
  - h4 To the moon! - no voluntary tasks accomplished
