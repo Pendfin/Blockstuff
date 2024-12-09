@@ -63,7 +63,7 @@ Volume 132, September 2023, 103387 and available in Elsevier(https://www-science
       - Need for other methods to prevent phishing--> the most common technique is machine learning, how can we overcome its limitations?
       - Not so common phishing vectors--> most of the mitigation strategies focus on websites and emaila, which are the most common attack vectors But for those less common also needs to be found mitigation strategies if those become more popular    
 
-### a) voluntary - how to create a wacth for science articles?
+### a) voluntary - how to create a watch for science articles?
 - tried to create this: maybe google scholar would be easiest to create an alert with googles alert function or scholar's own function
 - topic is: "infosec + phishing" - now we wait and see.....
 - ![image](https://github.com/user-attachments/assets/04d69930-3f2d-4162-b254-bc05be466075)
