@@ -68,7 +68,7 @@ Volume 132, September 2023, 103387 and available in Elsevier(https://www-science
 - topic is: "infosec + phishing" - now we wait and see.....
 - ![image](https://github.com/user-attachments/assets/04d69930-3f2d-4162-b254-bc05be466075)
 - day later:I got two emails of infosec and phishing category--> adjusted search --> infosec phishing "phishing" and now we wait and see is this more precise
-- another day later: two more notification, I still wnat refine the notifications--> infosec "phishing" and another on with: infosec OR phishing "phishing" - let's see what hapens
+- another day later: two more notification, I still want refine the notifications--> infosec "phishing" and another on with: infosec OR phishing "phishing" - let's see what hapens
 
 
 
